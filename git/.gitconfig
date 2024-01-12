@@ -1,0 +1,78 @@
+# git config doc: https://git-scm.com/docs/git-config
+
+[init]
+  defaultBranch = main # use main branch on init from git v2.28
+
+[core]
+  attributesfile = ~/dotfiles-base/git/.gitattributes
+  editor = vim
+  pager = less -eFRX
+  autocrlf = input
+  ignorecase = false
+
+[fetch]
+  prune = true
+
+[merge]
+  conflictstyle = zdiff3
+
+[push]
+  default = current # push the current branch to update a branch with the same name on remote
+
+[pull]
+  rebase = true # avoid merge when pulling from remote
+
+[alias]
+  ci = commit
+  lg = log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset %C(bold blue)%-(trailers:key=Co-authored-by,only=true,valueonly=true,unfold=true,separator= - )%Creset' --abbrev-commit
+  new = !git init && git symbolic-ref HEAD refs/heads/main # use main branch on init before git v2.28
+  pl = pull --rebase
+  set-current-upstream = !git branch --set-upstream-to=origin/$(git branch --show-current) $(git branch --show-current)
+  prune-local-branchs = !git fetch --prune
+  print-local-branchs = !git for-each-ref --format '%(refname:short)' refs/heads
+  delete-all-branchs-except-main = !git prune-local-branchs && git print-local-branchs | grep -v main | xargs git branch -d
+  delete-all-branchs-except-master = !git prune-local-branchs && git print-local-branchs | grep -v master | xargs git branch -d
+  pull-rebase-all-branchs = !git checkout main && git pull --rebase origin main && git print-local-branchs | grep -v main | xargs -n 1 -I {} sh -c \"git checkout {} && git pull --rebase origin main && git checkout -\"
+
+[branch "master"]
+  rebase = true # reforce rebase on master branch
+
+[branch "main"]
+  rebase = true # reforce rebase on main branch
+
+[branch]
+  autoSetupRebase = always
+
+# delta for diff
+
+# use `GIT_PAGER=delta git diff` if delta is not the default pager
+# [core]
+#   pager = delta
+# [interactive]
+#   diffFilter = delta --color-only
+
+[delta]
+  features = side-by-side line-numbers decorations
+  whitespace-error-style = 22 reverse
+  theme = 'Monokai Extended Bright'
+  light = true
+
+[delta "decorations"]
+  commit-decoration-style = bold yellow box ul
+  file-style = bold yellow ul
+  file-decoration-style = none
+
+# end delta for diff
+
+[diff "plist"]
+  textconv = plutil -convert xml1 -o -
+
+[diff]
+  colorMoved = zebra
+
+[include]
+  path = ~/dotfiles-base/git/configs/default/.gitconfig
+[include]
+  path = ~/custom.gitconfig
+[includeIf "gitdir:~/Projects/example/"]
+	path = ~/dotfiles-base/git/configs/example/.gitconfig

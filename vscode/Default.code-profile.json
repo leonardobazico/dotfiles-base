@@ -1,0 +1,3739 @@
+{
+  "name": "Default",
+  "settings": {
+    "settings": {
+      "files.defaultLanguage": "${activeEditorLanguage}",
+      "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "[typescript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+      },
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+        "source.fixAll.tslint": "explicit",
+        "source.fixAll.stylelint": "explicit"
+      },
+      "eslint.enable": true,
+      "editor.renderControlCharacters": true,
+      "editor.tabSize": 2,
+      "files.insertFinalNewline": true,
+      "files.trimFinalNewlines": true,
+      "files.trimTrailingWhitespace": true,
+      "gitlens.currentLine.enabled": false,
+      "javascript.updateImportsOnFileMove.enabled": "always",
+      "prettier.singleQuote": true,
+      "terminal.external.osxExec": "iTerm.app",
+      "terraform.languageServer": {
+        "external": true,
+        "args": [
+          "serve"
+        ]
+      },
+      "typescript.updateImportsOnFileMove.enabled": "always",
+      "workbench.iconTheme": "vscode-icons",
+      "launch": {
+        "configurations": [],
+        "compounds": []
+      },
+      "settingsSync.ignoredExtensions": [
+        "relationalai.relational-ai"
+      ],
+      "cucumberautocomplete.gherkinDefinitionPart": "false",
+      "settingsSync.ignoredSettings": [],
+      "diffEditor.ignoreTrimWhitespace": false,
+      "gitlens.heatmap.toggleMode": "window",
+      "zenMode.restore": true,
+      "gitlens.blame.toggleMode": "window",
+      "yaml.schemas": {
+        "file:///toc.schema.json": "/toc\\\\\\\\.yml/i"
+      },
+      "azure-pipelines.configure": false,
+      "[azure-pipelines]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "vsicons.dontShowNewVersionMessage": true,
+      "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+      },
+      "files.associations": {
+        "*.strings": "plist"
+      },
+      "html.format.extraLiners": "",
+      "cSpell.userWords": [],
+      "gitlens.mode.active": "zen",
+      "sync.forceUpload": false,
+      "redhat.telemetry.enabled": false,
+      "shellformat.effectLanguages": [
+        "shellscript",
+        "dotenv",
+        "hosts",
+        "jvmoptions",
+        "ignore",
+        "gitignore",
+        "properties",
+        "spring-boot-properties",
+        "azcli",
+        "bats"
+      ],
+      "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "editor.guides.bracketPairs": "active",
+      "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+      },
+      "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+      },
+      "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+      },
+      "[python]": {
+        "editor.formatOnType": true
+      },
+      "cSpell.enabled": false,
+      "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+      },
+      "gopls": {
+        "ui.semanticTokens": true
+      },
+      "window.autoDetectColorScheme": true,
+      "terminal.integrated.enableMultiLinePasteWarning": false,
+      "git.openRepositoryInParentFolders": "never",
+      "boot-java.rewrite.reconcile": true,
+      "codeium.enableConfig": {
+        "*": false,
+        "csv": true
+      },
+      "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false,
+        "javascript": true
+      },
+      "go.toolsManagement.autoUpdate": true,
+      "go.lintTool": "golangci-lint",
+      "go.lintFlags": [
+        "--fast",
+        "--fix"
+      ],
+      "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "java.completion.chain.enabled": true,
+      "java.eclipse.downloadSources": true,
+      "java.maven.downloadSources": true,
+      "go.inferGopath": true,
+      "files.autoSave": "onFocusChange"
+    }
+  },
+  "keybindings": {
+    "keybindings": [
+      {
+        "key": "cmd+enter",
+        "command": "workbench.action.terminal.splitInstance",
+        "when": "terminalProcessSupported && terminalTabsFocus"
+      },
+      {
+        "key": "cmd+\\",
+        "command": "-workbench.action.terminal.splitInstance",
+        "when": "terminalProcessSupported && terminalTabsFocus"
+      },
+      {
+        "key": "cmd+d",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus && terminalProcessSupported"
+      },
+      {
+        "key": "cmd+\\",
+        "command": "-workbench.action.terminal.split",
+        "when": "terminalFocus && terminalProcessSupported"
+      },
+      {
+        "key": "cmd+k",
+        "command": "workbench.action.terminal.clear",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+      },
+      {
+        "key": "cmd+k f2",
+        "command": "-togglePeekWidgetFocus",
+        "when": "inReferenceSearchEditor || referenceSearchVisible"
+      },
+      {
+        "key": "cmd+k alt+cmd+c",
+        "command": "-copyFilePath",
+        "when": "editorFocus"
+      },
+      {
+        "key": "cmd+k shift+alt+cmd+c",
+        "command": "-copyRelativeFilePath",
+        "when": "editorFocus"
+      },
+      {
+        "key": "cmd+k cmd+a",
+        "command": "-keybindings.editor.addKeybinding",
+        "when": "inKeybindings && keybindingFocus"
+      },
+      {
+        "key": "cmd+k cmd+e",
+        "command": "-keybindings.editor.defineWhenExpression",
+        "when": "inKeybindings && keybindingFocus"
+      },
+      {
+        "key": "cmd+k cmd+c",
+        "command": "-notebook.cell.collapseCellInput",
+        "when": "notebookCellListFocused && !inputFocus && !notebookCellInputIsCollapsed"
+      },
+      {
+        "key": "cmd+k t",
+        "command": "-notebook.cell.collapseCellOutput",
+        "when": "notebookCellHasOutputs && notebookCellListFocused && !inputFocus && !notebookCellOutputIsCollapsed"
+      },
+      {
+        "key": "cmd+k cmd+c",
+        "command": "-notebook.cell.expandCellInput",
+        "when": "notebookCellInputIsCollapsed && notebookCellListFocused"
+      },
+      {
+        "key": "cmd+k t",
+        "command": "-notebook.cell.expandCellOutput",
+        "when": "notebookCellListFocused && notebookCellOutputIsCollapsed"
+      },
+      {
+        "key": "cmd+k shift+cmd+\\",
+        "command": "-notebook.cell.split",
+        "when": "notebookCellEditable && notebookEditable && notebookEditorFocused"
+      },
+      {
+        "key": "cmd+k cmd+w",
+        "command": "-workbench.action.closeAllEditors"
+      },
+      {
+        "key": "cmd+k shift+cmd+w",
+        "command": "-workbench.action.closeAllGroups"
+      },
+      {
+        "key": "cmd+k w",
+        "command": "-workbench.action.closeEditorsInGroup"
+      },
+      {
+        "key": "cmd+k f",
+        "command": "-workbench.action.closeFolder",
+        "when": "emptyWorkspaceSupport && workbenchState != 'empty'"
+      },
+      {
+        "key": "cmd+k u",
+        "command": "-workbench.action.closeUnmodifiedEditors"
+      },
+      {
+        "key": "cmd+k m",
+        "command": "-workbench.action.editor.changeLanguageMode",
+        "when": "!notebookEditorFocused"
+      },
+      {
+        "key": "cmd+k p",
+        "command": "-workbench.action.files.copyPathOfActiveFile"
+      },
+      {
+        "key": "cmd+k r",
+        "command": "-workbench.action.files.revealActiveFileInWindows"
+      },
+      {
+        "key": "cmd+k s",
+        "command": "-workbench.action.files.saveWithoutFormatting"
+      },
+      {
+        "key": "cmd+k o",
+        "command": "-workbench.action.files.showOpenedFileInNewWindow",
+        "when": "emptyWorkspaceSupport"
+      },
+      {
+        "key": "cmd+k cmd+up",
+        "command": "-workbench.action.focusAboveGroup"
+      },
+      {
+        "key": "cmd+k cmd+down",
+        "command": "-workbench.action.focusBelowGroup"
+      },
+      {
+        "key": "cmd+k cmd+left",
+        "command": "-workbench.action.focusLeftGroup"
+      },
+      {
+        "key": "cmd+k cmd+right",
+        "command": "-workbench.action.focusRightGroup"
+      },
+      {
+        "key": "cmd+k shift+cmd+\\",
+        "command": "-workbench.action.joinEditorInGroup",
+        "when": "sideBySideEditorActive"
+      },
+      {
+        "key": "cmd+k enter",
+        "command": "-workbench.action.keepEditor"
+      },
+      {
+        "key": "cmd+k cmd+r",
+        "command": "-workbench.action.keybindingsReference"
+      },
+      {
+        "key": "cmd+k down",
+        "command": "-workbench.action.moveActiveEditorGroupDown"
+      },
+      {
+        "key": "cmd+k left",
+        "command": "-workbench.action.moveActiveEditorGroupLeft"
+      },
+      {
+        "key": "cmd+k right",
+        "command": "-workbench.action.moveActiveEditorGroupRight"
+      },
+      {
+        "key": "cmd+k up",
+        "command": "-workbench.action.moveActiveEditorGroupUp"
+      },
+      {
+        "key": "cmd+k shift+cmd+left",
+        "command": "-workbench.action.moveEditorLeftInGroup"
+      },
+      {
+        "key": "cmd+k shift+cmd+right",
+        "command": "-workbench.action.moveEditorRightInGroup"
+      },
+      {
+        "key": "cmd+k cmd+q",
+        "command": "-workbench.action.navigateToLastEditLocation"
+      },
+      {
+        "key": "cmd+k alt+cmd+right",
+        "command": "-workbench.action.nextEditorInGroup"
+      },
+      {
+        "key": "cmd+k cmd+s",
+        "command": "-workbench.action.openGlobalKeybindings"
+      },
+      {
+        "key": "cmd+k shift+enter",
+        "command": "-workbench.action.pinEditor",
+        "when": "!activeEditorIsPinned"
+      },
+      {
+        "key": "cmd+k alt+cmd+left",
+        "command": "-workbench.action.previousEditorInGroup"
+      },
+      {
+        "key": "cmd+k cmd+t",
+        "command": "-workbench.action.selectTheme"
+      },
+      {
+        "key": "cmd+k cmd+i",
+        "command": "-workbench.action.showTreeHover",
+        "when": "customTreeView && listFocus && !inputFocus"
+      },
+      {
+        "key": "cmd+k shift+cmd+\\",
+        "command": "-workbench.action.splitEditorInGroup",
+        "when": "activeEditorCanSplitInGroup"
+      },
+      {
+        "key": "cmd+k cmd+\\",
+        "command": "-workbench.action.splitEditorOrthogonal"
+      },
+      {
+        "key": "cmd+k z",
+        "command": "-workbench.action.toggleZenMode"
+      },
+      {
+        "key": "cmd+k shift+enter",
+        "command": "-workbench.action.unpinEditor",
+        "when": "activeEditorIsPinned"
+      },
+      {
+        "key": "cmd+k c",
+        "command": "-workbench.files.action.compareWithClipboard"
+      },
+      {
+        "key": "cmd+k d",
+        "command": "-workbench.files.action.compareWithSaved"
+      },
+      {
+        "key": "cmd+k e",
+        "command": "-workbench.files.action.focusOpenEditorsView",
+        "when": "workbench.explorer.openEditorsView.active"
+      },
+      {
+        "key": "cmd+k down",
+        "command": "-views.moveViewDown",
+        "when": "focusedView != ''"
+      },
+      {
+        "key": "cmd+k left",
+        "command": "-views.moveViewLeft",
+        "when": "focusedView != ''"
+      },
+      {
+        "key": "cmd+k right",
+        "command": "-views.moveViewRight",
+        "when": "focusedView != ''"
+      },
+      {
+        "key": "cmd+k up",
+        "command": "-views.moveViewUp",
+        "when": "focusedView != ''"
+      },
+      {
+        "key": "cmd+k alt+cmd+s",
+        "command": "-git.stageSelectedRanges",
+        "when": "isInDiffEditor"
+      },
+      {
+        "key": "cmd+k cmd+n",
+        "command": "-git.unstageSelectedRanges",
+        "when": "isInDiffEditor"
+      },
+      {
+        "key": "cmd+k v",
+        "command": "-markdown.showPreviewToSide",
+        "when": "!notebookEditorFocused && editorLangId == 'markdown'"
+      },
+      {
+        "key": "cmd+k cmd+r",
+        "command": "-git.revertSelectedRanges",
+        "when": "isInDiffEditor"
+      },
+      {
+        "key": "cmd+k v",
+        "command": "-bicep.showVisualizerToSide",
+        "when": "resourceLangId == 'bicep'"
+      },
+      {
+        "key": "cmd+k i",
+        "command": "-bicep.insertResource",
+        "when": "resourceLangId == 'bicep'"
+      }
+    ],
+    "platform": 1
+  },
+  "extensions": [
+    {
+      "identifier": {
+        "id": "adamvoss.vscode-languagetool",
+        "uuid": "5b45bff0-e35e-4317-8686-1625c2a9c411"
+      },
+      "displayName": "LanguageTool for Visual Studio Code",
+      "disabled": true
+    },
+    {
+      "identifier": {
+        "id": "alexkrechik.cucumberautocomplete",
+        "uuid": "25e38b8d-ff51-4c34-af36-b7b7961cf666"
+      },
+      "displayName": "Cucumber (Gherkin) Full Support",
+      "disabled": true
+    },
+    {
+      "identifier": {
+        "id": "andys8.jest-snippets",
+        "uuid": "8ee0c715-ca9e-4ce2-8841-5faa5e0f3255"
+      },
+      "displayName": "Jest Snippets"
+    },
+    {
+      "identifier": {
+        "id": "bencoleman.armview",
+        "uuid": "238a3e72-2381-419b-8ed2-ece541264f28"
+      },
+      "displayName": "ARM Template Viewer",
+      "disabled": true
+    },
+    {
+      "identifier": {
+        "id": "bierner.markdown-mermaid",
+        "uuid": "f8d0ffc4-66bb-4a9c-8149-ef8f043691a1"
+      },
+      "displayName": "Markdown Preview Mermaid Support"
+    },
+    {
+      "identifier": {
+        "id": "christian-kohler.npm-intellisense",
+        "uuid": "dff6b801-247e-40e9-82e8-8c9b1d19d1b8"
+      },
+      "displayName": "npm Intellisense"
+    },
+    {
+      "identifier": {
+        "id": "cmstead.jsrefactor",
+        "uuid": "74f34f8a-245e-4133-8617-a3a94b5a417e"
+      },
+      "displayName": "JS Refactor :: JS CodeFormer"
+    },
+    {
+      "identifier": {
+        "id": "codeium.codeium",
+        "uuid": "acab4f40-b6db-42ec-bcd1-01802cbdd988"
+      },
+      "displayName": "Codeium: AI Coding Autocomplete and Chat for Python, Javascript, Typescript, Java, Go, and more",
+      "disabled": true
+    },
+    {
+      "identifier": {
+        "id": "dakara.transformer",
+        "uuid": "e74697c7-82c2-42d0-9502-a19a602732df"
+      },
+      "displayName": "Transformer"
+    },
+    {
+      "identifier": {
+        "id": "dandrii.gherkin-table-formatter",
+        "uuid": "d5dbd75e-60e0-4874-9301-bfab23787d05"
+      },
+      "displayName": "Gherkin Table Formatter"
+    },
+    {
+      "identifier": {
+        "id": "dart-code.dart-code",
+        "uuid": "f57f68ea-9ee8-42b5-9a97-041d3e4278c4"
+      },
+      "displayName": "Dart",
+      "disabled": true
+    },
+    {
+      "identifier": {
+        "id": "davidanson.vscode-markdownlint",
+        "uuid": "daf8b44d-8aae-4da2-80c5-1f770219f643"
+      },
+      "displayName": "markdownlint"
+    },
+    {
+      "identifier": {
+        "id": "dbaeumer.vscode-eslint",
+        "uuid": "583b2b34-2c1e-4634-8c0b-0b82e283ea3a"
+      },
+      "displayName": "ESLint"
+    },
+    {
+      "identifier": {
+        "id": "deinsoftware.testing-library-snippets",
+        "uuid": "584a5761-e4a4-4f0f-8e57-a3bdc5d0affc"
+      },
+      "displayName": "Testing Library Snippets"
+    },
+    {
+      "identifier": {
+        "id": "dnicolson.binary-plist",
+        "uuid": "7b530645-4f49-4222-a851-c18d854275fb"
+      },
+      "displayName": "Binary Plist"
+    },
+    {
+      "identifier": {
+        "id": "docsmsft.docs-yaml",
+        "uuid": "f6bcef79-211f-4454-8020-2d5b6ee9fd9a"
+      },
+      "displayName": "learn-yaml",
+      "disabled": true
+    },
+    {
+      "identifier": {
+        "id": "donjayamanne.githistory",
+        "uuid": "5960f38e-0bbe-4644-8f9c-9c8824e82511"
+      },
+      "displayName": "Git History",
+      "disabled": true
+    },
+    {
+      "identifier": {
+        "id": "dotjoshjohnson.xml",
+        "uuid": "0cb81da2-1880-4755-9995-0ae9cc728e20"
+      },
+      "displayName": "XML Tools"
+    },
+    {
+      "identifier": {
+        "id": "eamodio.gitlens",
+        "uuid": "4de763bd-505d-4978-9575-2b7696ecf94e"
+      },
+      "displayName": "GitLens — Git supercharged"
+    },
+    {
+      "identifier": {
+        "id": "esbenp.prettier-vscode",
+        "uuid": "96fa4707-6983-4489-b7c5-d5ffdfdcce90"
+      },
+      "displayName": "Prettier - Code formatter"
+    },
+    {
+      "identifier": {
+        "id": "foxundermoon.shell-format",
+        "uuid": "5fb19573-2183-4cf2-b53d-0fb869dae7ae"
+      },
+      "displayName": "shell-format"
+    },
+    {
+      "identifier": {
+        "id": "github.copilot",
+        "uuid": "23c4aeee-f844-43cd-b53e-1113e483f1a6"
+      },
+      "displayName": "GitHub Copilot"
+    },
+    {
+      "identifier": {
+        "id": "github.copilot-chat",
+        "uuid": "7ec7d6e6-b89e-4cc5-a59b-d6c4d238246f"
+      },
+      "displayName": "GitHub Copilot Chat"
+    },
+    {
+      "identifier": {
+        "id": "github.copilot-labs",
+        "uuid": "327edf3f-193d-4147-9bd5-e3763272116f"
+      },
+      "displayName": "GitHub Copilot Labs",
+      "disabled": true
+    },
+    {
+      "identifier": {
+        "id": "github.vscode-github-actions",
+        "uuid": "04f49bfc-8330-4eee-8237-ea938fb755ef"
+      },
+      "displayName": "GitHub Actions"
+    },
+    {
+      "identifier": {
+        "id": "golang.go",
+        "uuid": "d6f6cfea-4b6f-41f4-b571-6ad2ab7918da"
+      },
+      "displayName": "Go"
+    },
+    {
+      "identifier": {
+        "id": "hashicorp.terraform",
+        "uuid": "4a23294b-fd16-4c51-9759-da9936474cf8"
+      },
+      "displayName": "HashiCorp Terraform",
+      "disabled": true
+    },
+    {
+      "identifier": {
+        "id": "idleberg.applescript",
+        "uuid": "d57cfcbb-5746-48be-a607-96967331a91c"
+      },
+      "displayName": "AppleScript",
+      "disabled": true
+    },
+    {
+      "identifier": {
+        "id": "mechatroner.rainbow-csv",
+        "uuid": "3792588c-3d35-442d-91ea-fe6a755e8155"
+      },
+      "displayName": "Rainbow CSV"
+    },
+    {
+      "identifier": {
+        "id": "ms-azure-devops.azure-pipelines",
+        "uuid": "7032281c-aa10-4e95-9049-46a8bd112af3"
+      },
+      "displayName": "Azure Pipelines"
+    },
+    {
+      "identifier": {
+        "id": "ms-azuretools.vscode-azureappservice",
+        "uuid": "42691ca6-18d6-4efe-9e9a-1aabad399d4b"
+      },
+      "displayName": "Azure App Service",
+      "disabled": true
+    },
+    {
+      "identifier": {
+        "id": "ms-azuretools.vscode-azurecontainerapps",
+        "uuid": "d203e26c-b2bf-4184-aeff-1a301f348305"
+      },
+      "displayName": "Azure Container Apps"
+    },
+    {
+      "identifier": {
+        "id": "ms-azuretools.vscode-azurefunctions",
+        "uuid": "2ed5adbe-c4e1-4227-8e41-31e2095b30e3"
+      },
+      "displayName": "Azure Functions",
+      "disabled": true
+    },
+    {
+      "identifier": {
+        "id": "ms-azuretools.vscode-azureresourcegroups",
+        "uuid": "260e9ed1-160d-4f7e-807c-2eb076ba3846"
+      },
+      "displayName": "Azure Resources",
+      "disabled": true
+    },
+    {
+      "identifier": {
+        "id": "ms-azuretools.vscode-azurestorage",
+        "uuid": "2a1fdf76-30a9-4155-94f1-73462a7cee3f"
+      },
+      "displayName": "Azure Storage",
+      "disabled": true
+    },
+    {
+      "identifier": {
+        "id": "ms-azuretools.vscode-azurevirtualmachines",
+        "uuid": "6c14d399-a13b-4542-b439-f521b071cf35"
+      },
+      "displayName": "Azure Virtual Machines",
+      "disabled": true
+    },
+    {
+      "identifier": {
+        "id": "ms-azuretools.vscode-bicep",
+        "uuid": "1e9f2dc9-aa4c-4e27-afc5-f781e9a9cd9b"
+      },
+      "displayName": "Bicep"
+    },
+    {
+      "identifier": {
+        "id": "ms-azuretools.vscode-cosmosdb",
+        "uuid": "951e1945-25a8-4ea0-aa11-076ac75b098d"
+      },
+      "displayName": "Azure Databases",
+      "disabled": true
+    },
+    {
+      "identifier": {
+        "id": "ms-azuretools.vscode-docker",
+        "uuid": "0479fc1c-3d67-49f9-b087-fb9069afe48f"
+      },
+      "displayName": "Docker",
+      "disabled": true
+    },
+    {
+      "identifier": {
+        "id": "ms-dotnettools.vscode-dotnet-runtime",
+        "uuid": "1aab81a1-b3d9-4aef-976b-577d5d90fe3f"
+      },
+      "displayName": ".NET Install Tool"
+    },
+    {
+      "identifier": {
+        "id": "ms-python.black-formatter",
+        "uuid": "859e640c-c157-47da-8699-9080b81c8371"
+      },
+      "displayName": "Black Formatter"
+    },
+    {
+      "identifier": {
+        "id": "ms-python.flake8",
+        "uuid": "856a00d7-c18a-406c-8461-d4914a12e193"
+      },
+      "displayName": "Flake8"
+    },
+    {
+      "identifier": {
+        "id": "ms-python.isort",
+        "uuid": "4ad0ce32-ff3f-49f0-83b5-93e5dc00cfff"
+      },
+      "displayName": "isort"
+    },
+    {
+      "identifier": {
+        "id": "ms-python.python",
+        "uuid": "f1f59ae4-9318-4f3c-a9b5-81b2eaa5f8a5"
+      },
+      "displayName": "Python"
+    },
+    {
+      "identifier": {
+        "id": "ms-python.vscode-pylance",
+        "uuid": "364d2426-116a-433a-a5d8-a5098dc3afbd"
+      },
+      "displayName": "Pylance"
+    },
+    {
+      "identifier": {
+        "id": "ms-toolsai.jupyter",
+        "uuid": "6c2f1801-1e7f-45b2-9b5c-7782f1e076e8"
+      },
+      "displayName": "Jupyter"
+    },
+    {
+      "identifier": {
+        "id": "ms-vscode.azure-account",
+        "uuid": "819a23e1-b6c6-41cf-9029-e653b537d996"
+      },
+      "displayName": "Azure Account"
+    },
+    {
+      "identifier": {
+        "id": "ms-vscode.azurecli",
+        "uuid": "5dcca53c-1485-4cdc-a643-4a366d2ac9e0"
+      },
+      "displayName": "Azure CLI Tools",
+      "disabled": true
+    },
+    {
+      "identifier": {
+        "id": "ms-vscode.makefile-tools",
+        "uuid": "e09cf600-90a1-414e-92a0-031f1a5391c6"
+      },
+      "displayName": "Makefile Tools"
+    },
+    {
+      "identifier": {
+        "id": "ms-vscode.vscode-node-azure-pack",
+        "uuid": "849943af-364f-4353-ba78-bb5a7f6d37c4"
+      },
+      "displayName": "Azure Tools",
+      "disabled": true
+    },
+    {
+      "identifier": {
+        "id": "ms-vsliveshare.vsliveshare",
+        "uuid": "5a6dc0d5-dc02-4121-8e24-cad33a2ff0af"
+      },
+      "displayName": "Live Share"
+    },
+    {
+      "identifier": {
+        "id": "oliversturm.fix-json",
+        "uuid": "da88ed17-dd66-424b-8d92-d6a2222ac171"
+      },
+      "displayName": "Fix JSON"
+    },
+    {
+      "identifier": {
+        "id": "redhat.java",
+        "uuid": "198a707e-28af-4e84-8610-6e2f628dd12d"
+      },
+      "displayName": "Language Support for Java(TM) by Red Hat"
+    },
+    {
+      "identifier": {
+        "id": "redhat.vscode-commons",
+        "uuid": "2f0eaac2-070b-4dc7-9b23-8dd4c970c11c"
+      },
+      "displayName": "Red Hat Commons"
+    },
+    {
+      "identifier": {
+        "id": "redhat.vscode-xml",
+        "uuid": "6703768d-d42f-474e-9f6e-5f288d53f6e8"
+      },
+      "displayName": "XML"
+    },
+    {
+      "identifier": {
+        "id": "redhat.vscode-yaml",
+        "uuid": "2061917f-f76a-458a-8da9-f162de22b97e"
+      },
+      "displayName": "YAML"
+    },
+    {
+      "identifier": {
+        "id": "relationalai.relational-ai",
+        "uuid": "3f541f73-21dc-443d-a774-d3162d573fd9"
+      },
+      "displayName": "RelationalAI"
+    },
+    {
+      "identifier": {
+        "id": "sharat.vscode-brewfile",
+        "uuid": "a8db5896-13bd-4701-8f07-0cd495261291"
+      },
+      "displayName": "Brewfile"
+    },
+    {
+      "identifier": {
+        "id": "sidneys1.gitconfig",
+        "uuid": "b75c12ec-9a82-45e7-aac2-1687e509a76b"
+      },
+      "displayName": "Gitconfig Syntax"
+    },
+    {
+      "identifier": {
+        "id": "streetsidesoftware.code-spell-checker",
+        "uuid": "f6dbd813-b0a0-42c1-90ea-10dde9d925a7"
+      },
+      "displayName": "Code Spell Checker"
+    },
+    {
+      "identifier": {
+        "id": "visualstudioexptteam.intellicode-api-usage-examples",
+        "uuid": "9fa2a00e-3bfa-4c2a-abc4-a865bb2b5cf3"
+      },
+      "displayName": "IntelliCode API Usage Examples"
+    },
+    {
+      "identifier": {
+        "id": "visualstudioexptteam.vscodeintellicode",
+        "uuid": "876e8f93-74d0-4f4f-91b7-34a09f19f444"
+      },
+      "displayName": "IntelliCode"
+    },
+    {
+      "identifier": {
+        "id": "vmware.vscode-boot-dev-pack",
+        "uuid": "26069f6b-56ea-4c29-8e28-371698a60020"
+      },
+      "displayName": "Spring Boot Extension Pack"
+    },
+    {
+      "identifier": {
+        "id": "vmware.vscode-spring-boot",
+        "uuid": "0efda145-8595-4ff7-98ef-1e3abc5e5757"
+      },
+      "displayName": "Spring Boot Tools"
+    },
+    {
+      "identifier": {
+        "id": "vscjava.vscode-gradle",
+        "uuid": "a226f06e-9b5e-493b-b92a-553d3572f969"
+      },
+      "displayName": "Gradle for Java"
+    },
+    {
+      "identifier": {
+        "id": "vscjava.vscode-java-debug",
+        "uuid": "61fcd0cf-64d7-4836-8d6b-d55f4fb83281"
+      },
+      "displayName": "Debugger for Java"
+    },
+    {
+      "identifier": {
+        "id": "vscjava.vscode-java-dependency",
+        "uuid": "7865e561-1c83-410e-9b99-aabada597a7e"
+      },
+      "displayName": "Project Manager for Java"
+    },
+    {
+      "identifier": {
+        "id": "vscjava.vscode-java-pack",
+        "uuid": "96f11e1f-1a46-4592-b084-f025b2c2a81f"
+      },
+      "displayName": "Extension Pack for Java"
+    },
+    {
+      "identifier": {
+        "id": "vscjava.vscode-java-test",
+        "uuid": "67c06b0d-1891-42ca-b2a8-113e79bff069"
+      },
+      "displayName": "Test Runner for Java"
+    },
+    {
+      "identifier": {
+        "id": "vscjava.vscode-maven",
+        "uuid": "b0f06c6b-24fb-4d7b-bd79-bc5e2fa17312"
+      },
+      "displayName": "Maven for Java"
+    },
+    {
+      "identifier": {
+        "id": "vscjava.vscode-spring-boot-dashboard",
+        "uuid": "27fc0e8e-1341-4f52-9219-4e0f81590937"
+      },
+      "displayName": "Spring Boot Dashboard"
+    },
+    {
+      "identifier": {
+        "id": "vscjava.vscode-spring-initializr",
+        "uuid": "a205ad34-542b-4c67-a9ed-f645103ad9c0"
+      },
+      "displayName": "Spring Initializr Java Support"
+    },
+    {
+      "identifier": {
+        "id": "vscode-icons-team.vscode-icons",
+        "uuid": "9ccc1dd7-7ec4-4a46-bd4f-7d7b8b9d322a"
+      },
+      "displayName": "vscode-icons"
+    },
+    {
+      "identifier": {
+        "id": "wmaurer.change-case",
+        "uuid": "2aa040bf-c73a-455d-8946-5c6cc83b8019"
+      }
+    },
+    {
+      "identifier": {
+        "id": "zhouronghui.propertylist",
+        "uuid": "bec6a8b1-31d4-4f4e-9b3c-9141285b359f"
+      },
+      "displayName": "PropertyList",
+      "disabled": true
+    },
+    {
+      "identifier": {
+        "id": "zxh404.vscode-proto3",
+        "uuid": "1d3d1fb2-0d8f-47ed-bfce-990b8ddfc9d8"
+      },
+      "displayName": "vscode-proto3"
+    }
+  ],
+  "globalState": {
+    "storage": {
+      "workbench.panel.markers.hidden": [
+        {
+          "id": "workbench.panel.markers.view",
+          "isHidden": false
+        }
+      ],
+      "workbench.panel.output.hidden": [
+        {
+          "id": "workbench.panel.output",
+          "isHidden": false
+        }
+      ],
+      "terminal.hidden": [
+        {
+          "id": "terminal",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.panel.chat.view.copilot",
+          "isHidden": false
+        }
+      ],
+      "workbench.explorer.views.state.hidden": [
+        {
+          "id": "workbench.explorer.openEditorsView",
+          "isHidden": false
+        },
+        {
+          "id": "dartPackages",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.explorer.fileView",
+          "isHidden": false
+        },
+        {
+          "id": "outline",
+          "isHidden": false
+        },
+        {
+          "id": "npm",
+          "isHidden": false
+        },
+        {
+          "id": "liveshare.session.explorer",
+          "isHidden": false
+        },
+        {
+          "id": "commitViewProvider",
+          "isHidden": false
+        },
+        {
+          "id": "timeline",
+          "isHidden": false
+        },
+        {
+          "id": "xmlTreeView",
+          "isHidden": false
+        },
+        {
+          "id": "azurerm-vscode-tools.template-outline",
+          "isHidden": false
+        },
+        {
+          "id": "compareCommitViewProvider",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.repositories:explorer",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.fileHistory:explorer",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.lineHistory:explorer",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.compare:explorer",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.search:explorer",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.explorer.emptyView",
+          "isHidden": false
+        },
+        {
+          "id": "SonarLint.AllRules",
+          "isHidden": false
+        },
+        {
+          "id": "azVmTree",
+          "isHidden": false
+        },
+        {
+          "id": "dartDependencyTree",
+          "isHidden": false
+        },
+        {
+          "id": "azureResourceGroups",
+          "isHidden": false
+        },
+        {
+          "id": "ms-azuretools.helpAndFeedback",
+          "isHidden": false
+        },
+        {
+          "id": "dockerContainers",
+          "isHidden": false
+        },
+        {
+          "id": "dockerImages",
+          "isHidden": false
+        },
+        {
+          "id": "dockerRegistries",
+          "isHidden": false
+        },
+        {
+          "id": "dockerNetworks",
+          "isHidden": false
+        },
+        {
+          "id": "dockerVolumes",
+          "isHidden": false
+        },
+        {
+          "id": "vscode-docker.views.dockerContexts",
+          "isHidden": false
+        },
+        {
+          "id": "vscode-docker.views.help",
+          "isHidden": false
+        },
+        {
+          "id": "go.explorer",
+          "isHidden": false
+        },
+        {
+          "id": "javaProjectExplorer",
+          "isHidden": false
+        },
+        {
+          "id": "mavenProjects",
+          "isHidden": false
+        }
+      ],
+      "workbench.scm.views.state.hidden": [
+        {
+          "id": "scm.mainPanel",
+          "isHidden": true
+        },
+        {
+          "id": "scm.mainPane",
+          "isHidden": false
+        },
+        {
+          "id": "scm:repository:-158476377",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.scm",
+          "isHidden": false
+        },
+        {
+          "id": "scm:repository:-922086987",
+          "isHidden": false
+        },
+        {
+          "id": "scm:repository:-538470443",
+          "isHidden": false
+        },
+        {
+          "id": "scm:repository:-1610194404",
+          "isHidden": false
+        },
+        {
+          "id": "scm:repository:-1304439146",
+          "isHidden": false
+        },
+        {
+          "id": "scm:repository:1336758506",
+          "isHidden": false
+        },
+        {
+          "id": "scm:repository:1495613850",
+          "isHidden": false
+        },
+        {
+          "id": "scm:repository:-532770700",
+          "isHidden": false
+        },
+        {
+          "id": "scm:repository:-1895848765",
+          "isHidden": false
+        },
+        {
+          "id": "scm:repository:1117259017",
+          "isHidden": false
+        },
+        {
+          "id": "scm:repository:482728679",
+          "isHidden": false
+        },
+        {
+          "id": "scm:repository:-1784044705",
+          "isHidden": false
+        },
+        {
+          "id": "scm:repository:1072310062",
+          "isHidden": false
+        },
+        {
+          "id": "scm:repository:-2028089633",
+          "isHidden": false
+        },
+        {
+          "id": "scm:repository:928854376",
+          "isHidden": false
+        },
+        {
+          "id": "scm:repository:-1037099664",
+          "isHidden": false
+        },
+        {
+          "id": "scm:repository:182219260",
+          "isHidden": false
+        },
+        {
+          "id": "scm:repository:-955136845",
+          "isHidden": false
+        },
+        {
+          "id": "scm:repository:-835184003",
+          "isHidden": false
+        },
+        {
+          "id": "scm:repository:-221040668",
+          "isHidden": false
+        },
+        {
+          "id": "scm:repository:291378978",
+          "isHidden": false
+        },
+        {
+          "id": "scm:repository:520732854",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.repositories:scm",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.fileHistory:scm",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.lineHistory:scm",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.compare:scm",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.search:scm",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.scm.repositories",
+          "isHidden": true
+        },
+        {
+          "id": "gitlens.views.repositories",
+          "isHidden": true
+        },
+        {
+          "id": "gitlens.views.commits",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.fileHistory",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.lineHistory",
+          "isHidden": true
+        },
+        {
+          "id": "gitlens.views.branches",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.remotes",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.stashes",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.tags",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.contributors",
+          "isHidden": true
+        },
+        {
+          "id": "gitlens.views.searchAndCompare",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.commitDetails",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.worktrees",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.scm.sync",
+          "isHidden": false
+        }
+      ],
+      "workbench.view.search.state.hidden": [
+        {
+          "id": "workbench.view.search",
+          "isHidden": false
+        }
+      ],
+      "workbench.activity.pinnedViewlets2": [
+        {
+          "id": "workbench.view.explorer",
+          "pinned": true,
+          "visible": true,
+          "order": 0
+        },
+        {
+          "id": "workbench.view.search",
+          "pinned": true,
+          "visible": true,
+          "order": 1
+        },
+        {
+          "id": "workbench.view.scm",
+          "pinned": true,
+          "visible": true,
+          "order": 2
+        },
+        {
+          "id": "workbench.view.debug",
+          "pinned": true,
+          "visible": true,
+          "order": 3
+        },
+        {
+          "id": "workbench.view.remote",
+          "pinned": true,
+          "visible": false,
+          "order": 4
+        },
+        {
+          "id": "workbench.view.extensions",
+          "pinned": true,
+          "visible": true,
+          "order": 4
+        },
+        {
+          "id": "workbench.view.extension.test",
+          "pinned": true,
+          "visible": false,
+          "order": 6
+        },
+        {
+          "id": "workbench.view.extension.references-view",
+          "pinned": true,
+          "visible": false,
+          "order": 7
+        },
+        {
+          "id": "workbench.view.extension.flutter",
+          "pinned": true,
+          "visible": false,
+          "order": 8
+        },
+        {
+          "id": "workbench.view.extension.gitlensInspect",
+          "pinned": true,
+          "visible": true,
+          "order": 9
+        },
+        {
+          "id": "workbench.view.extension.gitlensPatch",
+          "pinned": true,
+          "order": 10
+        },
+        {
+          "id": "workbench.view.extension.makefile__viewContainer",
+          "pinned": true,
+          "visible": true,
+          "order": 13
+        },
+        {
+          "id": "workbench.view.extension.gradleContainerView",
+          "pinned": true,
+          "visible": false,
+          "order": 17
+        },
+        {
+          "id": "workbench.view.extension.spring",
+          "pinned": true,
+          "visible": false,
+          "order": 18
+        },
+        {
+          "id": "workbench.view.extension.copilot-labs",
+          "pinned": true,
+          "visible": true,
+          "order": 10
+        },
+        {
+          "id": "workbench.view.extension.relationalai",
+          "pinned": true,
+          "order": 15
+        },
+        {
+          "id": "workbench.views.service.sidebar.e02bef86-4c29-4005-ab7c-c82c3d594a1c",
+          "pinned": true
+        },
+        {
+          "id": "workbench.view.extension.codeium",
+          "pinned": true,
+          "visible": false,
+          "order": 8
+        },
+        {
+          "id": "workbench.view.extension.github-actions",
+          "pinned": true,
+          "visible": true,
+          "order": 11
+        },
+        {
+          "id": "workbench.panel.chatSidebar",
+          "pinned": true,
+          "visible": true,
+          "order": 100
+        },
+        {
+          "id": "workbench.view.editSessions",
+          "pinned": true,
+          "visible": false
+        },
+        {
+          "id": "workbench.view.extension.terraform-explorer",
+          "pinned": true,
+          "visible": false,
+          "order": 10
+        },
+        {
+          "id": "workbench.view.extension.cspell-explorer",
+          "pinned": true,
+          "visible": false,
+          "order": 16
+        },
+        {
+          "id": "workbench.view.extension.jupyter",
+          "pinned": true,
+          "visible": false,
+          "order": 12
+        },
+        {
+          "id": "workbench.view.extension.wallaby",
+          "pinned": true,
+          "visible": false,
+          "order": 19
+        },
+        {
+          "id": "workbench.view.extension.PowerShellCommandExplorer",
+          "pinned": true,
+          "visible": false,
+          "order": 12
+        },
+        {
+          "id": "workbench.view.extension.liveshare",
+          "pinned": true,
+          "visible": true,
+          "order": 14
+        },
+        {
+          "id": "workbench.view.extension.dockerView",
+          "pinned": true,
+          "visible": false,
+          "order": 11
+        },
+        {
+          "id": "workbench.view.extension.gitlens",
+          "pinned": true,
+          "visible": true,
+          "order": 8
+        },
+        {
+          "id": "workbench.view.extension.azure",
+          "pinned": true,
+          "visible": false,
+          "order": 10
+        },
+        {
+          "id": "workbench.view.sync",
+          "pinned": true,
+          "visible": false
+        },
+        {
+          "id": "userDataProfiles",
+          "pinned": true,
+          "visible": false
+        }
+      ],
+      "workbench.view.debug.state.hidden": [
+        {
+          "id": "workbench.debug.loadedScriptsView",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.debug.variablesView",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.debug.watchExpressionsView",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.debug.callStackView",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.debug.breakPointsView",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.debug.welcome",
+          "isHidden": false
+        },
+        {
+          "id": "jsBrowserBreakpoints",
+          "isHidden": false
+        },
+        {
+          "id": "jsExcludedCallers",
+          "isHidden": false
+        }
+      ],
+      "nps/lastSessionDate": "Fri Jun 07 2019",
+      "nps/sessionCount": "9",
+      "workbench.telemetryOptOutShown": "true",
+      "workbench.statusbar.hidden": [
+        "status.workspaceTrust.1623351246118",
+        "status.workspaceTrust.70db527827a083de1830847e6d7f7b12",
+        "status.workspaceTrust.b72db83be7045cbd3838fe183c9eaafb",
+        "status.workspaceTrust.311272250f2c55817e57499c947e7f8d",
+        "status.workspaceTrust.1623793703618",
+        "status.workspaceTrust.3abbe3d988e91d5547cf07d7beb6ec0a",
+        "status.workspaceTrust.1623799697437",
+        "status.workspaceTrust.216f86781ddbc7a81f6cb6ee9b1fea5d",
+        "status.workspaceTrust.3fd37c7872e45accb2c553ed80de904e",
+        "status.workspaceTrust.facdec80113be378a20f91970c1641e5",
+        "status.workspaceTrust.e14d8d12ecfd34ea829254c44897cc9b",
+        "status.workspaceTrust.d1e43b0541db539b16021e7fa2410828",
+        "status.workspaceTrust.654fb80217475257562e27a13ec7d838",
+        "status.workspaceTrust.1625065009366",
+        "status.workspaceTrust.1625081303560",
+        "status.workspaceTrust.1625081323814",
+        "status.workspaceTrust.1625237059080",
+        "status.workspaceTrust.f22ebbd1c1db02796cc83bb7a78d4a09",
+        "status.workspaceTrust.c05a7077117f60959c2c8cda7a29177d",
+        "status.workspaceTrust.e409a624fab62213bb0defdd61d43596",
+        "status.workspaceTrust.418257ecf1c3d2381ad700b9769fc5fe",
+        "status.workspaceTrust.2876ed987e626192f7a7841fdf3cb0bf",
+        "status.workspaceTrust.03b583d54b7dc4b7f27208a748136a54",
+        "status.workspaceTrust.1666202850892",
+        "status.workspaceTrust.8a979b9205ba9b408166752986f827e0",
+        "status.workspaceTrust.e175140d2621d0a6c8b67f4a663836e4",
+        "status.workspaceTrust.516d3d9ca0024b51b666f5e1aeec23d4",
+        "status.workspaceTrust.1667851051114",
+        "status.workspaceTrust.1667926601144",
+        "status.workspaceTrust.0fae9682c51b3c84c67fb92c1b17cce3",
+        "status.workspaceTrust.1670362879592",
+        "status.workspaceTrust.1670531668920",
+        "status.workspaceTrust.1670857792376",
+        "status.workspaceTrust.69cde9fbb0fd0b920a9a5359a4eaa3ed",
+        "status.workspaceTrust.4530b42c65d11a14c454d4112c5d26ce",
+        "status.workspaceTrust.31bb89849191139a3838301352d6923b",
+        "status.workspaceTrust.14c00f8e6431b04862050c842a7bcb57",
+        "status.workspaceTrust.1675102695490",
+        "status.workspaceTrust.1675102711052",
+        "status.workspaceTrust.1675187780360",
+        "status.workspaceTrust.d1d5791f18b6477109941bdf2cb89a0b",
+        "status.workspaceTrust.d6fe53d1740a5ceb4aa6bfe2396a3de9",
+        "status.workspaceTrust.9ba5784a51a95293e59da01f73c8e649",
+        "status.workspaceTrust.fc71ebaf78500168778da4b0c975575b",
+        "status.workspaceTrust.b9a50e0975803b81b1a32d6d493238ec",
+        "status.workspaceTrust.d13e201e7d1875abfd488026e8cdb45c",
+        "status.workspaceTrust.99c21cd06d4e9abe545f41cce8ac6943",
+        "status.workspaceTrust.1678829425255",
+        "status.workspaceTrust.0f360ebb0f565fe20252613ee08dc33a",
+        "status.workspaceTrust.8b754e233368dabb76e0707def13ced4",
+        "status.workspaceTrust.8e7e37bcff73b299817d39b463f25fe4",
+        "status.workspaceTrust.1680799071264",
+        "status.workspaceTrust.1681827465711",
+        "status.workspaceTrust.1682091193159",
+        "status.workspaceTrust.1682526471872",
+        "status.workspaceTrust.998682c6389faf7d9584af05af7e5f7e",
+        "status.workspaceTrust.1684427172392",
+        "status.workspaceTrust.1685369550378",
+        "status.workspaceTrust.1685396377184",
+        "status.workspaceTrust.1685641684766",
+        "status.workspaceTrust.1685723150739",
+        "status.workspaceTrust.c88efee09cd0456c9d24ce160e21ea17",
+        "status.workspaceTrust.1c12c35a598c3f5477ad300f928dfb26",
+        "status.workspaceTrust.1686687983936",
+        "status.workspaceTrust.1686689809120",
+        "status.workspaceTrust.6e331f93754f1bf057232a7a6beaff48",
+        "status.workspaceTrust.1687382415669",
+        "status.workspaceTrust.55df55844036c62dcf2ed34c66c9a493",
+        "status.workspaceTrust.1689024290180",
+        "status.workspaceTrust.7b99795c897b5716e4966595d92be97b",
+        "status.workspaceTrust.1746865c025bc9be52f6344d6c23ccc9",
+        "status.workspaceTrust.1689620351185",
+        "status.workspaceTrust.37884c8d8c7accd6838640c30dcdf029",
+        "status.workspaceTrust.1689690845334",
+        "status.workspaceTrust.1689696187793",
+        "status.workspaceTrust.1690225220687",
+        "status.workspaceTrust.2b7850748ab676275bfd9430df9b8a6e",
+        "status.workspaceTrust.5fed817cac809eaaa8895a31922e780d",
+        "status.workspaceTrust.1690399336174",
+        "status.workspaceTrust.67996bd4e2875e7df83a3a1565616d68",
+        "status.workspaceTrust.1690830214170",
+        "status.workspaceTrust.e0fa1034d9824f85da3f8013cfd39700",
+        "status.workspaceTrust.1691001130674",
+        "status.workspaceTrust.1691001228886",
+        "status.workspaceTrust.556e8bfe8af31249705ff6521c4c62e4",
+        "status.workspaceTrust.1691006052258",
+        "status.workspaceTrust.0d9fd5bc0b8ea21b9dc8f099f148d269",
+        "status.workspaceTrust.b161ebd80e7d9b50188a06f3dcecdd9d",
+        "status.workspaceTrust.333355026b3f24fa8dd29c38ea44511c",
+        "status.workspaceTrust.3523bcd7657d93fe87d31267ad8cbfd0",
+        "status.workspaceTrust.1692118582575",
+        "status.workspaceTrust.8f1e28835f7a1ead424fbcbe7faa8b8b",
+        "status.workspaceTrust.1692130413083",
+        "status.workspaceTrust.36bca53e2851632204bc70bc45e2fe1c",
+        "status.workspaceTrust.1692206524941",
+        "status.workspaceTrust.1692368390539",
+        "status.workspaceTrust.1695931080184",
+        "status.workspaceTrust.1696454673339",
+        "status.workspaceTrust.76718d269ffd2640d6156a6d2818acee",
+        "status.workspaceTrust.ae996f1402ac5ca22f4bb8c3e64d0665",
+        "status.workspaceTrust.15675fd0c3a7626574979f4a528afaf7",
+        "status.workspaceTrust.1697061426680",
+        "status.workspaceTrust.b1839fd13e5d54e3431f29f5df9f003f",
+        "status.workspaceTrust.acedb70125545fd3ba6a2cec36fef27e",
+        "status.workspaceTrust.ba1b0fc021be1e474b57eea66d35c08b",
+        "status.workspaceTrust.a8be368563bc8a742c8f8d5a94501f35",
+        "status.workspaceTrust.86b46f2b67e3af24d1f63c0fa5b7983e",
+        "status.workspaceTrust.06c47465b51b3e16a398505e3a2c1532",
+        "status.workspaceTrust.d6b01b5091db9368585f5e7b961c31c3",
+        "status.workspaceTrust.8fe0260a2e9430344dc81f41e69feccf",
+        "status.workspaceTrust.aaba6cd8889f325153e978913295a2f4",
+        "status.workspaceTrust.1698155623481",
+        "status.workspaceTrust.1698179329768",
+        "status.workspaceTrust.008bb4fcc4ee6fef70e1ef0516c472fa",
+        "status.workspaceTrust.dc8256ae69411440af4f910939868d2e",
+        "status.workspaceTrust.1698779681164",
+        "status.workspaceTrust.1699027143285",
+        "status.workspaceTrust.6a388c6729333a9bb5c9e77b95ee8edc",
+        "status.workspaceTrust.67a880a883558390cc1d025d0439c7dd",
+        "status.workspaceTrust.1e971b4b4b5082f34dabeddbc8107c6b",
+        "status.workspaceTrust.8b82a7bce89480fd7860ffaf524bb0c2",
+        "status.workspaceTrust.1701811392096",
+        "status.workspaceTrust.79af14aa15281bcfaebd7464f12dd9d7",
+        "status.workspaceTrust.1704210783201",
+        "status.workspaceTrust.1704912765371",
+        "status.workspaceTrust.29dd2a5cde9338534482ef83888dffca"
+      ],
+      "colorThemeData": {
+        "id": "vs-dark vscode-theme-defaults-themes-dark_modern-json",
+        "label": "Dark Modern",
+        "settingsId": "Default Dark Modern",
+        "themeTokenColors": [
+          {
+            "settings": {
+              "foreground": "#D4D4D4"
+            },
+            "scope": [
+              "meta.embedded",
+              "source.groovy.embedded",
+              "string meta.image.inline.markdown",
+              "variable.legacy.builtin.python"
+            ]
+          },
+          {
+            "settings": {
+              "fontStyle": "italic"
+            },
+            "scope": "emphasis"
+          },
+          {
+            "settings": {
+              "fontStyle": "bold"
+            },
+            "scope": "strong"
+          },
+          {
+            "settings": {
+              "foreground": "#000080"
+            },
+            "scope": "header"
+          },
+          {
+            "settings": {
+              "foreground": "#6A9955"
+            },
+            "scope": "comment"
+          },
+          {
+            "settings": {
+              "foreground": "#569cd6"
+            },
+            "scope": "constant.language"
+          },
+          {
+            "settings": {
+              "foreground": "#b5cea8"
+            },
+            "scope": [
+              "constant.numeric",
+              "variable.other.enummember",
+              "keyword.operator.plus.exponent",
+              "keyword.operator.minus.exponent"
+            ]
+          },
+          {
+            "settings": {
+              "foreground": "#646695"
+            },
+            "scope": "constant.regexp"
+          },
+          {
+            "settings": {
+              "foreground": "#569cd6"
+            },
+            "scope": "entity.name.tag"
+          },
+          {
+            "settings": {
+              "foreground": "#d7ba7d"
+            },
+            "scope": "entity.name.tag.css"
+          },
+          {
+            "settings": {
+              "foreground": "#9cdcfe"
+            },
+            "scope": "entity.other.attribute-name"
+          },
+          {
+            "settings": {
+              "foreground": "#d7ba7d"
+            },
+            "scope": [
+              "entity.other.attribute-name.class.css",
+              "entity.other.attribute-name.class.mixin.css",
+              "entity.other.attribute-name.id.css",
+              "entity.other.attribute-name.parent-selector.css",
+              "entity.other.attribute-name.pseudo-class.css",
+              "entity.other.attribute-name.pseudo-element.css",
+              "source.css.less entity.other.attribute-name.id",
+              "entity.other.attribute-name.scss"
+            ]
+          },
+          {
+            "settings": {
+              "foreground": "#f44747"
+            },
+            "scope": "invalid"
+          },
+          {
+            "settings": {
+              "fontStyle": "underline"
+            },
+            "scope": "markup.underline"
+          },
+          {
+            "settings": {
+              "fontStyle": "bold",
+              "foreground": "#569cd6"
+            },
+            "scope": "markup.bold"
+          },
+          {
+            "settings": {
+              "fontStyle": "bold",
+              "foreground": "#569cd6"
+            },
+            "scope": "markup.heading"
+          },
+          {
+            "settings": {
+              "fontStyle": "italic"
+            },
+            "scope": "markup.italic"
+          },
+          {
+            "settings": {
+              "fontStyle": "strikethrough"
+            },
+            "scope": "markup.strikethrough"
+          },
+          {
+            "settings": {
+              "foreground": "#b5cea8"
+            },
+            "scope": "markup.inserted"
+          },
+          {
+            "settings": {
+              "foreground": "#ce9178"
+            },
+            "scope": "markup.deleted"
+          },
+          {
+            "settings": {
+              "foreground": "#569cd6"
+            },
+            "scope": "markup.changed"
+          },
+          {
+            "settings": {
+              "foreground": "#6A9955"
+            },
+            "scope": "punctuation.definition.quote.begin.markdown"
+          },
+          {
+            "settings": {
+              "foreground": "#6796e6"
+            },
+            "scope": "punctuation.definition.list.begin.markdown"
+          },
+          {
+            "settings": {
+              "foreground": "#ce9178"
+            },
+            "scope": "markup.inline.raw"
+          },
+          {
+            "settings": {
+              "foreground": "#808080"
+            },
+            "scope": "punctuation.definition.tag"
+          },
+          {
+            "settings": {
+              "foreground": "#569cd6"
+            },
+            "scope": [
+              "meta.preprocessor",
+              "entity.name.function.preprocessor"
+            ]
+          },
+          {
+            "settings": {
+              "foreground": "#ce9178"
+            },
+            "scope": "meta.preprocessor.string"
+          },
+          {
+            "settings": {
+              "foreground": "#b5cea8"
+            },
+            "scope": "meta.preprocessor.numeric"
+          },
+          {
+            "settings": {
+              "foreground": "#9cdcfe"
+            },
+            "scope": "meta.structure.dictionary.key.python"
+          },
+          {
+            "settings": {
+              "foreground": "#569cd6"
+            },
+            "scope": "meta.diff.header"
+          },
+          {
+            "settings": {
+              "foreground": "#569cd6"
+            },
+            "scope": "storage"
+          },
+          {
+            "settings": {
+              "foreground": "#569cd6"
+            },
+            "scope": "storage.type"
+          },
+          {
+            "settings": {
+              "foreground": "#569cd6"
+            },
+            "scope": [
+              "storage.modifier",
+              "keyword.operator.noexcept"
+            ]
+          },
+          {
+            "settings": {
+              "foreground": "#ce9178"
+            },
+            "scope": [
+              "string",
+              "meta.embedded.assembly"
+            ]
+          },
+          {
+            "settings": {
+              "foreground": "#ce9178"
+            },
+            "scope": "string.tag"
+          },
+          {
+            "settings": {
+              "foreground": "#ce9178"
+            },
+            "scope": "string.value"
+          },
+          {
+            "settings": {
+              "foreground": "#d16969"
+            },
+            "scope": "string.regexp"
+          },
+          {
+            "settings": {
+              "foreground": "#569cd6"
+            },
+            "scope": [
+              "punctuation.definition.template-expression.begin",
+              "punctuation.definition.template-expression.end",
+              "punctuation.section.embedded"
+            ]
+          },
+          {
+            "settings": {
+              "foreground": "#d4d4d4"
+            },
+            "scope": [
+              "meta.template.expression"
+            ]
+          },
+          {
+            "settings": {
+              "foreground": "#9cdcfe"
+            },
+            "scope": [
+              "support.type.vendored.property-name",
+              "support.type.property-name",
+              "variable.css",
+              "variable.scss",
+              "variable.other.less",
+              "source.coffee.embedded"
+            ]
+          },
+          {
+            "settings": {
+              "foreground": "#569cd6"
+            },
+            "scope": "keyword"
+          },
+          {
+            "settings": {
+              "foreground": "#569cd6"
+            },
+            "scope": "keyword.control"
+          },
+          {
+            "settings": {
+              "foreground": "#d4d4d4"
+            },
+            "scope": "keyword.operator"
+          },
+          {
+            "settings": {
+              "foreground": "#569cd6"
+            },
+            "scope": [
+              "keyword.operator.new",
+              "keyword.operator.expression",
+              "keyword.operator.cast",
+              "keyword.operator.sizeof",
+              "keyword.operator.alignof",
+              "keyword.operator.typeid",
+              "keyword.operator.alignas",
+              "keyword.operator.instanceof",
+              "keyword.operator.logical.python",
+              "keyword.operator.wordlike"
+            ]
+          },
+          {
+            "settings": {
+              "foreground": "#b5cea8"
+            },
+            "scope": "keyword.other.unit"
+          },
+          {
+            "settings": {
+              "foreground": "#569cd6"
+            },
+            "scope": [
+              "punctuation.section.embedded.begin.php",
+              "punctuation.section.embedded.end.php"
+            ]
+          },
+          {
+            "settings": {
+              "foreground": "#9cdcfe"
+            },
+            "scope": "support.function.git-rebase"
+          },
+          {
+            "settings": {
+              "foreground": "#b5cea8"
+            },
+            "scope": "constant.sha.git-rebase"
+          },
+          {
+            "settings": {
+              "foreground": "#d4d4d4"
+            },
+            "scope": [
+              "storage.modifier.import.java",
+              "variable.language.wildcard.java",
+              "storage.modifier.package.java"
+            ]
+          },
+          {
+            "settings": {
+              "foreground": "#569cd6"
+            },
+            "scope": "variable.language"
+          },
+          {
+            "settings": {
+              "foreground": "#DCDCAA"
+            },
+            "scope": [
+              "entity.name.function",
+              "support.function",
+              "support.constant.handlebars",
+              "source.powershell variable.other.member",
+              "entity.name.operator.custom-literal"
+            ]
+          },
+          {
+            "settings": {
+              "foreground": "#4EC9B0"
+            },
+            "scope": [
+              "support.class",
+              "support.type",
+              "entity.name.type",
+              "entity.name.namespace",
+              "entity.other.attribute",
+              "entity.name.scope-resolution",
+              "entity.name.class",
+              "storage.type.numeric.go",
+              "storage.type.byte.go",
+              "storage.type.boolean.go",
+              "storage.type.string.go",
+              "storage.type.uintptr.go",
+              "storage.type.error.go",
+              "storage.type.rune.go",
+              "storage.type.cs",
+              "storage.type.generic.cs",
+              "storage.type.modifier.cs",
+              "storage.type.variable.cs",
+              "storage.type.annotation.java",
+              "storage.type.generic.java",
+              "storage.type.java",
+              "storage.type.object.array.java",
+              "storage.type.primitive.array.java",
+              "storage.type.primitive.java",
+              "storage.type.token.java",
+              "storage.type.groovy",
+              "storage.type.annotation.groovy",
+              "storage.type.parameters.groovy",
+              "storage.type.generic.groovy",
+              "storage.type.object.array.groovy",
+              "storage.type.primitive.array.groovy",
+              "storage.type.primitive.groovy"
+            ]
+          },
+          {
+            "settings": {
+              "foreground": "#4EC9B0"
+            },
+            "scope": [
+              "meta.type.cast.expr",
+              "meta.type.new.expr",
+              "support.constant.math",
+              "support.constant.dom",
+              "support.constant.json",
+              "entity.other.inherited-class"
+            ]
+          },
+          {
+            "settings": {
+              "foreground": "#C586C0"
+            },
+            "scope": [
+              "keyword.control",
+              "source.cpp keyword.operator.new",
+              "keyword.operator.delete",
+              "keyword.other.using",
+              "keyword.other.directive.using",
+              "keyword.other.operator",
+              "entity.name.operator"
+            ]
+          },
+          {
+            "settings": {
+              "foreground": "#9CDCFE"
+            },
+            "scope": [
+              "variable",
+              "meta.definition.variable.name",
+              "support.variable",
+              "entity.name.variable",
+              "constant.other.placeholder"
+            ]
+          },
+          {
+            "settings": {
+              "foreground": "#4FC1FF"
+            },
+            "scope": [
+              "variable.other.constant",
+              "variable.other.enummember"
+            ]
+          },
+          {
+            "settings": {
+              "foreground": "#9CDCFE"
+            },
+            "scope": [
+              "meta.object-literal.key"
+            ]
+          },
+          {
+            "settings": {
+              "foreground": "#CE9178"
+            },
+            "scope": [
+              "support.constant.property-value",
+              "support.constant.font-name",
+              "support.constant.media-type",
+              "support.constant.media",
+              "constant.other.color.rgb-value",
+              "constant.other.rgb-value",
+              "support.constant.color"
+            ]
+          },
+          {
+            "settings": {
+              "foreground": "#CE9178"
+            },
+            "scope": [
+              "punctuation.definition.group.regexp",
+              "punctuation.definition.group.assertion.regexp",
+              "punctuation.definition.character-class.regexp",
+              "punctuation.character.set.begin.regexp",
+              "punctuation.character.set.end.regexp",
+              "keyword.operator.negation.regexp",
+              "support.other.parenthesis.regexp"
+            ]
+          },
+          {
+            "settings": {
+              "foreground": "#d16969"
+            },
+            "scope": [
+              "constant.character.character-class.regexp",
+              "constant.other.character-class.set.regexp",
+              "constant.other.character-class.regexp",
+              "constant.character.set.regexp"
+            ]
+          },
+          {
+            "settings": {
+              "foreground": "#DCDCAA"
+            },
+            "scope": [
+              "keyword.operator.or.regexp",
+              "keyword.control.anchor.regexp"
+            ]
+          },
+          {
+            "settings": {
+              "foreground": "#d7ba7d"
+            },
+            "scope": "keyword.operator.quantifier.regexp"
+          },
+          {
+            "settings": {
+              "foreground": "#569cd6"
+            },
+            "scope": [
+              "constant.character",
+              "constant.other.option"
+            ]
+          },
+          {
+            "settings": {
+              "foreground": "#d7ba7d"
+            },
+            "scope": "constant.character.escape"
+          },
+          {
+            "settings": {
+              "foreground": "#C8C8C8"
+            },
+            "scope": "entity.name.label"
+          }
+        ],
+        "semanticTokenRules": [
+          {
+            "_selector": "newOperator",
+            "_style": {
+              "_foreground": "#d4d4d4",
+              "_bold": null,
+              "_underline": null,
+              "_italic": null,
+              "_strikethrough": null
+            }
+          },
+          {
+            "_selector": "stringLiteral",
+            "_style": {
+              "_foreground": "#ce9178",
+              "_bold": null,
+              "_underline": null,
+              "_italic": null,
+              "_strikethrough": null
+            }
+          },
+          {
+            "_selector": "customLiteral",
+            "_style": {
+              "_foreground": "#d4d4d4",
+              "_bold": null,
+              "_underline": null,
+              "_italic": null,
+              "_strikethrough": null
+            }
+          },
+          {
+            "_selector": "numberLiteral",
+            "_style": {
+              "_foreground": "#b5cea8",
+              "_bold": null,
+              "_underline": null,
+              "_italic": null,
+              "_strikethrough": null
+            }
+          },
+          {
+            "_selector": "newOperator",
+            "_style": {
+              "_foreground": "#c586c0",
+              "_bold": null,
+              "_underline": null,
+              "_italic": null,
+              "_strikethrough": null
+            }
+          },
+          {
+            "_selector": "stringLiteral",
+            "_style": {
+              "_foreground": "#ce9178",
+              "_bold": null,
+              "_underline": null,
+              "_italic": null,
+              "_strikethrough": null
+            }
+          },
+          {
+            "_selector": "customLiteral",
+            "_style": {
+              "_foreground": "#dcdcaa",
+              "_bold": null,
+              "_underline": null,
+              "_italic": null,
+              "_strikethrough": null
+            }
+          },
+          {
+            "_selector": "numberLiteral",
+            "_style": {
+              "_foreground": "#b5cea8",
+              "_bold": null,
+              "_underline": null,
+              "_italic": null,
+              "_strikethrough": null
+            }
+          }
+        ],
+        "extensionData": {
+          "_extensionId": "vscode.theme-defaults",
+          "_extensionIsBuiltin": true,
+          "_extensionName": "theme-defaults",
+          "_extensionPublisher": "vscode"
+        },
+        "themeSemanticHighlighting": true,
+        "colorMap": {
+          "checkbox.border": "#3c3c3c",
+          "editor.background": "#1f1f1f",
+          "editor.foreground": "#cccccc",
+          "editor.inactiveSelectionBackground": "#3a3d41",
+          "editorIndentGuide.background1": "#404040",
+          "editorIndentGuide.activeBackground1": "#707070",
+          "editor.selectionHighlightBackground": "#add6ff26",
+          "list.dropBackground": "#383b3d",
+          "activityBarBadge.background": "#0078d4",
+          "sideBarTitle.foreground": "#cccccc",
+          "input.placeholderForeground": "#818181",
+          "menu.background": "#1f1f1f",
+          "menu.foreground": "#cccccc",
+          "menu.separatorBackground": "#454545",
+          "menu.border": "#454545",
+          "statusBarItem.remoteForeground": "#ffffff",
+          "statusBarItem.remoteBackground": "#0078d4",
+          "ports.iconRunningProcessForeground": "#369432",
+          "sideBarSectionHeader.background": "#181818",
+          "sideBarSectionHeader.border": "#2b2b2b",
+          "tab.lastPinnedBorder": "#cccccc33",
+          "list.activeSelectionIconForeground": "#ffffff",
+          "terminal.inactiveSelectionBackground": "#3a3d41",
+          "widget.border": "#313131",
+          "actionBar.toggledBackground": "#383a49",
+          "activityBar.activeBorder": "#0078d4",
+          "activityBar.background": "#181818",
+          "activityBar.border": "#2b2b2b",
+          "activityBar.foreground": "#d7d7d7",
+          "activityBar.inactiveForeground": "#868686",
+          "activityBarBadge.foreground": "#ffffff",
+          "badge.background": "#616161",
+          "badge.foreground": "#f8f8f8",
+          "button.background": "#0078d4",
+          "button.border": "#ffffff12",
+          "button.foreground": "#ffffff",
+          "button.hoverBackground": "#026ec1",
+          "button.secondaryBackground": "#313131",
+          "button.secondaryForeground": "#cccccc",
+          "button.secondaryHoverBackground": "#3c3c3c",
+          "chat.slashCommandBackground": "#34414b",
+          "chat.slashCommandForeground": "#40a6ff",
+          "checkbox.background": "#313131",
+          "debugToolBar.background": "#181818",
+          "descriptionForeground": "#9d9d9d",
+          "dropdown.background": "#313131",
+          "dropdown.border": "#3c3c3c",
+          "dropdown.foreground": "#cccccc",
+          "dropdown.listBackground": "#1f1f1f",
+          "editor.findMatchBackground": "#9e6a03",
+          "editorGroup.border": "#ffffff17",
+          "editorGroupHeader.tabsBackground": "#181818",
+          "editorGroupHeader.tabsBorder": "#2b2b2b",
+          "editorGutter.addedBackground": "#2ea043",
+          "editorGutter.deletedBackground": "#f85149",
+          "editorGutter.modifiedBackground": "#0078d4",
+          "editorLineNumber.activeForeground": "#cccccc",
+          "editorLineNumber.foreground": "#6e7681",
+          "editorOverviewRuler.border": "#010409",
+          "editorWidget.background": "#202020",
+          "errorForeground": "#f85149",
+          "focusBorder": "#0078d4",
+          "foreground": "#cccccc",
+          "icon.foreground": "#cccccc",
+          "input.background": "#313131",
+          "input.border": "#3c3c3c",
+          "input.foreground": "#cccccc",
+          "inputOption.activeBackground": "#2489db82",
+          "inputOption.activeBorder": "#2488db",
+          "keybindingLabel.foreground": "#cccccc",
+          "notificationCenterHeader.background": "#1f1f1f",
+          "notificationCenterHeader.foreground": "#cccccc",
+          "notifications.background": "#1f1f1f",
+          "notifications.border": "#2b2b2b",
+          "notifications.foreground": "#cccccc",
+          "panel.background": "#181818",
+          "panel.border": "#2b2b2b",
+          "panelInput.border": "#2b2b2b",
+          "panelTitle.activeBorder": "#0078d4",
+          "panelTitle.activeForeground": "#cccccc",
+          "panelTitle.inactiveForeground": "#9d9d9d",
+          "peekViewEditor.background": "#1f1f1f",
+          "peekViewEditor.matchHighlightBackground": "#bb800966",
+          "peekViewResult.background": "#1f1f1f",
+          "peekViewResult.matchHighlightBackground": "#bb800966",
+          "pickerGroup.border": "#3c3c3c",
+          "progressBar.background": "#0078d4",
+          "quickInput.background": "#222222",
+          "quickInput.foreground": "#cccccc",
+          "settings.dropdownBackground": "#313131",
+          "settings.dropdownBorder": "#3c3c3c",
+          "settings.headerForeground": "#ffffff",
+          "settings.modifiedItemIndicator": "#bb800966",
+          "sideBar.background": "#181818",
+          "sideBar.border": "#2b2b2b",
+          "sideBar.foreground": "#cccccc",
+          "sideBarSectionHeader.foreground": "#cccccc",
+          "statusBar.background": "#181818",
+          "statusBar.border": "#2b2b2b",
+          "statusBar.debuggingBackground": "#0078d4",
+          "statusBar.debuggingForeground": "#ffffff",
+          "statusBar.focusBorder": "#0078d4",
+          "statusBar.foreground": "#cccccc",
+          "statusBar.noFolderBackground": "#1f1f1f",
+          "statusBarItem.focusBorder": "#0078d4",
+          "statusBarItem.prominentBackground": "#6e768166",
+          "tab.activeBackground": "#1f1f1f",
+          "tab.activeBorder": "#1f1f1f",
+          "tab.activeBorderTop": "#0078d4",
+          "tab.activeForeground": "#ffffff",
+          "tab.border": "#2b2b2b",
+          "tab.hoverBackground": "#1f1f1f",
+          "tab.inactiveBackground": "#181818",
+          "tab.inactiveForeground": "#9d9d9d",
+          "tab.unfocusedActiveBorder": "#1f1f1f",
+          "tab.unfocusedActiveBorderTop": "#2b2b2b",
+          "tab.unfocusedHoverBackground": "#1f1f1f",
+          "terminal.foreground": "#cccccc",
+          "terminal.tab.activeBorder": "#0078d4",
+          "textBlockQuote.background": "#2b2b2b",
+          "textBlockQuote.border": "#616161",
+          "textCodeBlock.background": "#2b2b2b",
+          "textLink.activeForeground": "#4daafc",
+          "textLink.foreground": "#4daafc",
+          "textPreformat.foreground": "#d0d0d0",
+          "textPreformat.background": "#3c3c3c",
+          "textSeparator.foreground": "#21262d",
+          "titleBar.activeBackground": "#181818",
+          "titleBar.activeForeground": "#cccccc",
+          "titleBar.border": "#2b2b2b",
+          "titleBar.inactiveBackground": "#1f1f1f",
+          "titleBar.inactiveForeground": "#9d9d9d",
+          "welcomePage.tileBackground": "#2b2b2b",
+          "welcomePage.progress.foreground": "#0078d4"
+        },
+        "watch": false
+      },
+      "workbench.panel.repl.hidden": [
+        {
+          "id": "workbench.panel.repl.view",
+          "isHidden": false
+        }
+      ],
+      "workbench.panel.pinnedPanels": [
+        {
+          "id": "workbench.panel.testResults",
+          "pinned": true,
+          "visible": false,
+          "order": 3
+        },
+        {
+          "id": "terminal",
+          "pinned": true,
+          "visible": true,
+          "order": 3
+        },
+        {
+          "id": "~remote.forwardedPortsContainer",
+          "pinned": true,
+          "visible": true,
+          "order": 5
+        },
+        {
+          "id": "workbench.view.extension.jupyter-variables",
+          "pinned": true,
+          "visible": false,
+          "order": 7
+        },
+        {
+          "id": "workbench.view.extension.gitlensPanel",
+          "pinned": true,
+          "visible": true,
+          "order": 6
+        },
+        {
+          "id": "workbench.panel.comments",
+          "pinned": true,
+          "visible": false,
+          "order": 10
+        },
+        {
+          "id": "workbench.view.search",
+          "pinned": true,
+          "visible": false,
+          "order": 10
+        },
+        {
+          "id": "workbench.panel.markers",
+          "pinned": true,
+          "visible": true,
+          "order": 0
+        },
+        {
+          "id": "workbench.panel.output",
+          "pinned": true,
+          "visible": true,
+          "order": 1
+        },
+        {
+          "id": "workbench.panel.repl",
+          "pinned": true,
+          "visible": true,
+          "order": 2
+        },
+        {
+          "id": "refactorPreview",
+          "pinned": true,
+          "visible": false
+        }
+      ],
+      "memento/gettingStartedService": {
+        "commandPaletteTask": {
+          "done": true
+        },
+        "settingsSync": {
+          "done": true
+        },
+        "terminal": {
+          "done": true
+        },
+        "quickOpen": {
+          "done": true
+        },
+        "settings": {
+          "done": true
+        },
+        "pickAFolderTask-Mac": {
+          "done": true
+        },
+        "pickColorTheme": {
+          "done": true
+        },
+        "shortcuts": {
+          "done": true
+        },
+        "findLanguageExtensions": {
+          "done": true
+        },
+        "playground": {
+          "done": true
+        },
+        "extensions": {
+          "done": true
+        },
+        "videoTutorial": {
+          "done": true
+        },
+        "splitview": {
+          "done": true
+        },
+        "debugging": {
+          "done": true
+        },
+        "scm": {
+          "done": true
+        },
+        "tasks": {
+          "done": true
+        },
+        "ms-python.python#pythonDataScienceWelcome#python.openFolderMac": {
+          "done": true
+        },
+        "settingsSyncWeb": {
+          "done": true
+        },
+        "installGit": {
+          "done": true
+        },
+        "pickColorThemeWeb": {
+          "done": true
+        },
+        "quickOpenWeb": {
+          "done": true
+        },
+        "commandPaletteTaskWeb": {
+          "done": true
+        },
+        "ms-python.python#pythonWelcome#python.createPythonFile": {
+          "done": true
+        },
+        "ms-python.python#pythonDataScienceWelcome#python.createNewNotebook": {
+          "done": true
+        },
+        "ms-toolsai.jupyter#jupyterWelcome#ipynb.newUntitledIpynb": {
+          "done": true
+        },
+        "ms-azuretools.vscode-docker#dockerStart#dockerExplorer": {
+          "done": true
+        },
+        "eamodio.gitlens#gitlens.welcome#gitlens.welcome.additional": {
+          "done": true
+        },
+        "vscjava.vscode-java-pack#javaWelcome#java.showProjectExplorer.inactive": {
+          "done": true
+        },
+        "GitHub.copilot#copilotWelcome#copilot.signin": {
+          "done": true
+        },
+        "GitHub.copilot#copilotWelcome#copilot.firstsuggest": {
+          "done": true
+        },
+        "GitHub.copilot#copilotWelcome#copilot.realfiles.openrecent": {
+          "done": true
+        },
+        "GitHub.copilot#copilotWelcome#copilot.iterate": {
+          "done": true
+        },
+        "GitHub.copilot#copilotWelcome#copilot.creativity": {
+          "done": true
+        },
+        "GitHub.copilot#copilotWelcome#copilot.realfiles.quickopen": {
+          "done": true
+        },
+        "ms-python.python#pythonWelcome2#python.createPythonFile": {
+          "done": true
+        }
+      },
+      "ces/skipSurvey": "1.55.0",
+      "workbench.panel.alignment": "center",
+      "workbench.view.extension.jupyter-variables.state.hidden": [
+        {
+          "id": "jupyterViewVariables",
+          "isHidden": false
+        }
+      ],
+      "workbench.view.extensions.state.hidden": [
+        {
+          "id": "extensions.enabledExtensionList",
+          "isHidden": false
+        },
+        {
+          "id": "extensions.disabledExtensionList",
+          "isHidden": false
+        },
+        {
+          "id": "extensions.recommendedList",
+          "isHidden": false
+        },
+        {
+          "id": "extensions.popularExtensionsList",
+          "isHidden": false
+        },
+        {
+          "id": "extensions.listView",
+          "isHidden": false
+        },
+        {
+          "id": "extensions.vscode-local.installed",
+          "isHidden": false
+        },
+        {
+          "id": "extensions.workspaceRecommendedList",
+          "isHidden": false
+        },
+        {
+          "id": "extensions.otherrecommendedList",
+          "isHidden": false
+        },
+        {
+          "id": "extensions.enabledExtensionList2",
+          "isHidden": false
+        },
+        {
+          "id": "extensions.vscode-local.default",
+          "isHidden": false
+        },
+        {
+          "id": "extensions.disabledExtensionList2",
+          "isHidden": false
+        },
+        {
+          "id": "extensions.builtInExtensionsList",
+          "isHidden": false
+        },
+        {
+          "id": "extensions.builtInBasicsExtensionsList",
+          "isHidden": false
+        },
+        {
+          "id": "extensions.builtInThemesExtensionsList",
+          "isHidden": false
+        },
+        {
+          "id": "extensions.vscode-local.outdated",
+          "isHidden": false
+        },
+        {
+          "id": "extensions.local.default",
+          "isHidden": false
+        },
+        {
+          "id": "extensions.local.installed",
+          "isHidden": false
+        },
+        {
+          "id": "extensions.local.outdated",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.extensions.popular",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.extensions.workspaceRecommendations",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.extensions.installed",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.extensions.otherRecommendations",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.extensions.enabled",
+          "isHidden": true
+        },
+        {
+          "id": "workbench.views.extensions.disabled",
+          "isHidden": true
+        },
+        {
+          "id": "workbench.views.extensions.marketplace",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.extensions.searchInstalled",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.extensions.searchEnabled",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.extensions.searchDisabled",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.extensions.searchOutdated",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.extensions.searchBuiltin",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.extensions.builtinFeatureExtensions",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.extensions.builtinThemeExtensions",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.extensions.builtinProgrammingLanguageExtensions",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.extensions.installed.empty",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.extensions.searchTrustRequired",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.extensions.trustRequiredOnStartExtensions",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.extensions.trustRequiredOnDemandExtensions",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.extensions.searchWorkspaceUnsupported",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.extensions.untrustedUnsupportedExtensions",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.extensions.untrustedPartiallySupportedExtensions",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.extensions.virtualUnsupportedExtensions",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.extensions.virtualPartiallySupportedExtensions",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.extensions.searchRecentlyUpdated",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.extensions.deprecatedExtensions",
+          "isHidden": false
+        }
+      ],
+      "workbench.view.extension.test.state.hidden": [
+        {
+          "id": "dartTestTree",
+          "isHidden": false
+        },
+        {
+          "id": "python_tests",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.view.testing",
+          "isHidden": false
+        },
+        {
+          "id": "go.test.profile",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.view.testCoverage",
+          "isHidden": false
+        }
+      ],
+      "nps/skipVersion": "1.34.0",
+      "nps/isCandidate": "false",
+      "cpp.1.sessionCount": "619",
+      "cpp.1.lastSessionDate": "Thu Jan 11 2024",
+      "java.2.sessionCount": "597",
+      "java.2.lastSessionDate": "Mon Nov 06 2023",
+      "javascript.1.sessionCount": "16",
+      "javascript.1.lastSessionDate": "Thu Jul 04 2019",
+      "javascript.1.skipVersion": "1.36.0",
+      "javascript.1.isCandidate": "false",
+      "javascript.1.editedCount": "10",
+      "javascript.1.editedDate": "Wed Jul 03 2019",
+      "typescript.1.sessionCount": "99",
+      "typescript.1.lastSessionDate": "Wed Jan 22 2020",
+      "typescript.1.skipVersion": "1.41.1",
+      "typescript.1.isCandidate": "false",
+      "typescript.1.editedCount": "10",
+      "typescript.1.editedDate": "Tue Jan 21 2020",
+      "hasNotifiedOfSettingsAutosave": "true",
+      "commandPalette.mru.cache": {
+        "usesLRU": true,
+        "entries": [
+          {
+            "key": "workbench.action.editor.changeLanguageMode",
+            "value": 311
+          },
+          {
+            "key": "workbench.files.action.compareFileWith",
+            "value": 313
+          },
+          {
+            "key": "workbench.action.webview.reloadWebviewAction",
+            "value": 315
+          },
+          {
+            "key": "liveshare.follow",
+            "value": 331
+          },
+          {
+            "key": "liveshare.followToTheSide",
+            "value": 332
+          },
+          {
+            "key": "liveshare.listParticipants",
+            "value": 333
+          },
+          {
+            "key": "liveshare.leave",
+            "value": 334
+          },
+          {
+            "key": "workbench.action.selectTheme",
+            "value": 339
+          },
+          {
+            "key": "gitlens.toggleFileChanges",
+            "value": 342
+          },
+          {
+            "key": "testing.runAll",
+            "value": 349
+          },
+          {
+            "key": "gradle.runBuild",
+            "value": 354
+          },
+          {
+            "key": "cSpell.displayCSpellInfo",
+            "value": 358
+          },
+          {
+            "key": "cSpell.addWordToUserDictionary",
+            "value": 359
+          },
+          {
+            "key": "cSpell.removeWordFromUserDictionary",
+            "value": 360
+          },
+          {
+            "key": "cSpell.createCSpellConfig",
+            "value": 361
+          },
+          {
+            "key": "workbench.profiles.actions.exportProfile",
+            "value": 366
+          },
+          {
+            "key": "workbench.userDataSync.actions.configure",
+            "value": 368
+          },
+          {
+            "key": "github.copilot.interactiveEditor.fix",
+            "value": 371
+          },
+          {
+            "key": "github.copilot.interactiveEditor.generate",
+            "value": 372
+          },
+          {
+            "key": "github.copilot.toggleCopilot",
+            "value": 373
+          },
+          {
+            "key": "github.copilot.ghpr.applySuggestion",
+            "value": 376
+          },
+          {
+            "key": "codeium.openProfile",
+            "value": 381
+          },
+          {
+            "key": "codeium.provideAuthToken",
+            "value": 382
+          },
+          {
+            "key": "codeium.explainCodeBlock",
+            "value": 383
+          },
+          {
+            "key": "go.languageserver.restart",
+            "value": 388
+          },
+          {
+            "key": "go.locate.tools",
+            "value": 389
+          },
+          {
+            "key": "workbench.action.openQuickChat.copilot",
+            "value": 404
+          },
+          {
+            "key": "workbench.action.openChat.copilot",
+            "value": 405
+          },
+          {
+            "key": "workbench.action.chat.open",
+            "value": 406
+          },
+          {
+            "key": "python.viewLanguageServerOutput",
+            "value": 410
+          },
+          {
+            "key": "python.createEnvironment",
+            "value": 411
+          },
+          {
+            "key": "python.analysis.restartLanguageServer",
+            "value": 413
+          },
+          {
+            "key": "workbench.action.reloadWindow",
+            "value": 414
+          },
+          {
+            "key": "python.setInterpreter",
+            "value": 417
+          },
+          {
+            "key": "workbench.files.action.showActiveFileInExplorer",
+            "value": 420
+          },
+          {
+            "key": "go.environment.choose",
+            "value": 421
+          },
+          {
+            "key": "editor.action.sortLinesAscending",
+            "value": 424
+          },
+          {
+            "key": "workbench.action.files.saveWithoutFormatting",
+            "value": 425
+          },
+          {
+            "key": "workbench.action.openSettingsJson",
+            "value": 426
+          },
+          {
+            "key": "fixJson.fix",
+            "value": 432
+          },
+          {
+            "key": "workbench.action.openGlobalKeybindingsFile",
+            "value": 436
+          },
+          {
+            "key": "workbench.action.openDefaultKeybindingsFile",
+            "value": 437
+          },
+          {
+            "key": "gitlens.copyShaToClipboard",
+            "value": 443
+          },
+          {
+            "key": "extension.changeCase.upper",
+            "value": 446
+          },
+          {
+            "key": "markdown.showPreviewToSide",
+            "value": 451
+          },
+          {
+            "key": "gitlens.toggleLineBlame",
+            "value": 452
+          },
+          {
+            "key": "editor.action.duplicateSelection",
+            "value": 453
+          },
+          {
+            "key": "workbench.extensions.action.installExtensions",
+            "value": 454
+          },
+          {
+            "key": "editor.action.indentUsingSpaces",
+            "value": 457
+          },
+          {
+            "key": "editor.action.formatDocument",
+            "value": 458
+          }
+        ]
+      },
+      "commandPalette.mru.counter": "459",
+      "workbench.view.extension.references-view.state.hidden": [
+        {
+          "id": "references-view.tree",
+          "isHidden": false
+        }
+      ],
+      "workbench.view.extension.gitlens.state.hidden": [
+        {
+          "id": "gitlens.views.repositories:gitlens",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.fileHistory:gitlens",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.lineHistory:gitlens",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.compare:gitlens",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.search:gitlens",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.updates",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.welcome",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.home",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.contributors",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.workspaces",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.account",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.drafts",
+          "isHidden": false
+        }
+      ],
+      "workbench.view.extension.azure.state.hidden": [
+        {
+          "id": "azVmTree",
+          "isHidden": false
+        },
+        {
+          "id": "azureResourceGroups",
+          "isHidden": false
+        },
+        {
+          "id": "azureAppService",
+          "isHidden": false
+        },
+        {
+          "id": "azFuncTree",
+          "isHidden": false
+        },
+        {
+          "id": "azureDatabasesExplorer",
+          "isHidden": false
+        },
+        {
+          "id": "azureStorage",
+          "isHidden": false
+        },
+        {
+          "id": "ms-azuretools.helpAndFeedback",
+          "isHidden": false
+        }
+      ],
+      "workbench.view.extension.dockerView.state.hidden": [
+        {
+          "id": "dockerContainers",
+          "isHidden": false
+        },
+        {
+          "id": "dockerImages",
+          "isHidden": false
+        },
+        {
+          "id": "dockerRegistries",
+          "isHidden": false
+        },
+        {
+          "id": "dockerNetworks",
+          "isHidden": false
+        },
+        {
+          "id": "dockerVolumes",
+          "isHidden": false
+        },
+        {
+          "id": "vscode-docker.views.dockerContexts",
+          "isHidden": false
+        },
+        {
+          "id": "vscode-docker.views.help",
+          "isHidden": false
+        }
+      ],
+      "workbench.view.extension.PowerShellCommandExplorer.state.hidden": [
+        {
+          "id": "PowerShellCommands",
+          "isHidden": false
+        }
+      ],
+      "workbench.view.extension.liveshare.state.hidden": [
+        {
+          "id": "liveshare.session",
+          "isHidden": false
+        },
+        {
+          "id": "liveshare.contacts",
+          "isHidden": false
+        },
+        {
+          "id": "liveshare.plannedSessions",
+          "isHidden": false
+        },
+        {
+          "id": "liveshare.help",
+          "isHidden": false
+        },
+        {
+          "id": "liveshare.devtools",
+          "isHidden": false
+        }
+      ],
+      "workbench.view.extension.wallaby.state.hidden": [
+        {
+          "id": "wallaby.valueExplorer",
+          "isHidden": false
+        },
+        {
+          "id": "wallaby.traceExplorer",
+          "isHidden": false
+        },
+        {
+          "id": "wallaby.testFileCoverageExplorer",
+          "isHidden": false
+        }
+      ],
+      "terminal.integrated.showTerminalConfigPrompt": "false",
+      "fileBasedRecommendations/promptedRecommendations": {
+        "python": [
+          "ms-python.python"
+        ],
+        "makefile": [
+          "ms-vscode.makefile-tools"
+        ]
+      },
+      "refactorPreview.hidden": [
+        {
+          "id": "refactorPreview",
+          "isHidden": false
+        }
+      ],
+      "java.2.editedCount": "10",
+      "java.2.editedDate": "Fri Nov 03 2023",
+      "fileBasedRecommendations/promptedFileExtensions": [
+        "csv",
+        "min",
+        "proto"
+      ],
+      "memento/workbench.editor.keybindings": {
+        "searchHistory": []
+      },
+      "workbench.welcomePage.walkthroughMetadata": [
+        [
+          "ms-python.python#pythonWelcome",
+          {
+            "firstSeen": 1628541462431,
+            "stepIDs": [
+              "python.installPythonWin",
+              "python.installPythonMac",
+              "python.installPythonLinux",
+              "python.selectInterpreter",
+              "python.runAndDebug",
+              "python.runAndDebugMacOS",
+              "python.learnMore"
+            ],
+            "manaullyOpened": false
+          }
+        ],
+        [
+          "ms-python.python#pythonDataScienceWelcome",
+          {
+            "firstSeen": 1628541462431,
+            "stepIDs": [
+              "python.installPython",
+              "python.openFolderMac",
+              "python.openFolder",
+              "python.createNewNotebook",
+              "python.openInteractiveWindow",
+              "python.dataScienceLearnMore"
+            ],
+            "manaullyOpened": false
+          }
+        ],
+        [
+          "vscode.typescript-language-features#nodejsWelcome",
+          {
+            "firstSeen": 1666277740192,
+            "stepIDs": [
+              "walkthroughs.nodejsWelcome.downloadNode.forMacOrWindows",
+              "walkthroughs.nodejsWelcome.downloadNode.forLinux",
+              "walkthroughs.nodejsWelcome.makeJsFile",
+              "walkthroughs.nodejsWelcome.debugJsFile",
+              "walkthroughs.nodejsWelcome.learnMoreAboutJs"
+            ],
+            "manaullyOpened": false
+          }
+        ],
+        [
+          "ms-toolsai.jupyter#jupyterWelcome",
+          {
+            "firstSeen": 1666277740192,
+            "stepIDs": [
+              "ipynb.newUntitledIpynb",
+              "jupyter.selectKernel",
+              "jupyter.exploreAndDebug",
+              "jupyter.dataScienceLearnMore"
+            ],
+            "manaullyOpened": false
+          }
+        ],
+        [
+          "ms-azuretools.vscode-bicep#gettingStarted",
+          {
+            "firstSeen": 1667600365654,
+            "stepIDs": [
+              "openBicepFile",
+              "addParameters",
+              "addResources",
+              "visualizeYourResources",
+              "deployToAzure",
+              "learnMore"
+            ],
+            "manaullyOpened": false
+          }
+        ],
+        [
+          "ms-python.python#pythonWelcomeWithEnv",
+          {
+            "firstSeen": 1667600365654,
+            "stepIDs": [
+              "python.createPythonFile2",
+              "python.installPythonWin82",
+              "python.installPythonMac2",
+              "python.installPythonLinux2",
+              "python.createEnvironment",
+              "python.selectInterpreter2",
+              "python.runAndDebug2",
+              "python.learnMoreWithDS2"
+            ],
+            "manaullyOpened": false
+          }
+        ],
+        [
+          "eamodio.gitlens#gitlens.welcome",
+          {
+            "firstSeen": 1669843570898,
+            "stepIDs": [
+              "gitlens.welcome.tutorial",
+              "gitlens.welcome.experience",
+              "gitlens.welcome.settings",
+              "gitlens.welcome.currentLineBlame",
+              "gitlens.welcome.gitCodeLens",
+              "gitlens.welcome.revisionHistory",
+              "gitlens.welcome.fileAnnotations",
+              "gitlens.welcome.gitSideBarViews",
+              "gitlens.welcome.hostingServiceIntegrations",
+              "gitlens.welcome.gitCommandPalette",
+              "gitlens.welcome.interactiveRebaseEditor",
+              "gitlens.welcome.terminal",
+              "gitlens.welcome.plus"
+            ],
+            "manaullyOpened": false
+          }
+        ],
+        [
+          "eamodio.gitlens#gitlens.plus",
+          {
+            "firstSeen": 1669843570898,
+            "stepIDs": [
+              "gitlens.plus.intro",
+              "gitlens.plus.commitGraph",
+              "gitlens.plus.visualFileHistory",
+              "gitlens.plus.worktrees",
+              "gitlens.plus.richIntegrations",
+              "gitlens.plus.tryNow",
+              "gitlens.plus.trial",
+              "gitlens.plus.trial.extend",
+              "gitlens.plus.trial.upgrade"
+            ],
+            "manaullyOpened": false
+          }
+        ],
+        [
+          "ms-azuretools.vscode-docker#dockerStart",
+          {
+            "firstSeen": 1676500253535,
+            "stepIDs": [
+              "openFolder",
+              "openFolderMac",
+              "scaffold",
+              "buildImage",
+              "runContainer",
+              "dockerExplorer",
+              "pushImage",
+              "azDeploy",
+              "learn"
+            ],
+            "manaullyOpened": false
+          }
+        ],
+        [
+          "vscode.typescript-language-features#tempNodejsWelcome",
+          {
+            "firstSeen": 1683729313877,
+            "stepIDs": [],
+            "manaullyOpened": false
+          }
+        ],
+        [
+          "ms-python.python#pythonWelcome2",
+          {
+            "firstSeen": 1689089319832,
+            "stepIDs": [
+              "python.createPythonFolder",
+              "python.createPythonFile",
+              "python.installPythonWin8",
+              "python.installPythonMac",
+              "python.installPythonLinux",
+              "python.createEnvironment2",
+              "python.runAndDebug",
+              "python.learnMoreWithDS2"
+            ],
+            "manaullyOpened": false
+          }
+        ],
+        [
+          "vscjava.vscode-java-pack#javaWelcome",
+          {
+            "firstSeen": 1691001131058,
+            "stepIDs": [
+              "java.runtime",
+              "java.showProjectExplorer",
+              "java.showProjectExplorer.inactive",
+              "java.debugAndTest",
+              "java.extensions",
+              "java.more",
+              "java.moreForMac"
+            ],
+            "manaullyOpened": false
+          }
+        ],
+        [
+          "vmware.vscode-boot-dev-pack#springBootWelcome",
+          {
+            "firstSeen": 1692118582866,
+            "stepIDs": [
+              "new-project-using-initializr",
+              "explore-your-spring-projects",
+              "run-your-spring-projects",
+              "live-information-for-your-running-spring-app"
+            ],
+            "manaullyOpened": false
+          }
+        ],
+        [
+          "GitHub.copilot#copilotWelcome",
+          {
+            "firstSeen": 1696519782797,
+            "stepIDs": [
+              "GitHub.copilot#copilotWelcome#copilot.signin",
+              "GitHub.copilot#copilotWelcome#copilot.firstsuggest",
+              "GitHub.copilot#copilotWelcome#copilot.realfiles.openrecent",
+              "GitHub.copilot#copilotWelcome#copilot.realfiles.quickopen",
+              "GitHub.copilot#copilotWelcome#copilot.iterate",
+              "GitHub.copilot#copilotWelcome#copilot.creativity"
+            ],
+            "manaullyOpened": true
+          }
+        ]
+      ],
+      "workbench.welcomePage.hiddenCategories": [
+        "Setup",
+        "Beginner",
+        "Intermediate",
+        "github.copilot",
+        "GitHub.copilot#copilotWelcome"
+      ],
+      "extensionTips/promptedExecutableTips": {
+        "docker": [
+          "ms-vscode-remote.remote-containers"
+        ],
+        "mvn": [
+          "vscjava.vscode-java-pack"
+        ]
+      },
+      "extensionsAssistant/importantRecommendationsIgnore": [
+        "vscjava.vscode-java-pack"
+      ],
+      "views.customizations": {
+        "viewContainerLocations": {
+          "workbench.views.service.sidebar.e02bef86-4c29-4005-ab7c-c82c3d594a1c": 0
+        },
+        "viewLocations": {
+          "azureAppService": "workbench.view.extension.azure",
+          "azFuncTree": "workbench.view.extension.azure",
+          "azureStorage": "workbench.view.extension.azure",
+          "azureDatabasesExplorer": "workbench.view.extension.azure",
+          "workbench.panel.chat.view.copilot": "workbench.views.service.sidebar.e02bef86-4c29-4005-ab7c-c82c3d594a1c"
+        },
+        "viewContainerBadgeEnablementStates": {}
+      },
+      "workbench.view.extension.gitlensPanel.state.hidden": [
+        {
+          "id": "gitlens.views.timeline",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.graph",
+          "isHidden": false
+        },
+        {
+          "id": "gitlens.views.graphDetails",
+          "isHidden": false
+        }
+      ],
+      "snippets.usageTimestamps": [
+        [
+          "snippets/typescript.code-snippets/Set Timeout Function",
+          1669141352185
+        ],
+        [
+          "snippets/go.json/http.ListenAndServe",
+          1679349800503
+        ],
+        [
+          "snippets/snippets.json/it",
+          1689617290217
+        ],
+        [
+          "snippets/snippets.json/describe",
+          1691002764550
+        ],
+        [
+          "snippets/snippets.json/test",
+          1691002788142
+        ],
+        [
+          "snippets/java.json/Switch Statement",
+          1691012398624
+        ],
+        [
+          "snippets/go.json/case clause",
+          1697144516167
+        ]
+      ],
+      "workbench.view.extension.makefile__viewContainer.state.hidden": [
+        {
+          "id": "makefile.outline",
+          "isHidden": false
+        }
+      ],
+      "csharp.1.lastSessionDate": "Thu Jan 11 2024",
+      "csharp.1.sessionCount": "133",
+      "workbench.view.sync.state.hidden": [
+        {
+          "id": "workbench.views.sync.conflicts",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.sync.remoteActivity",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.sync.machines",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.views.sync.localActivity",
+          "isHidden": true
+        },
+        {
+          "id": "workbench.views.sync.troubleshoot",
+          "isHidden": true
+        }
+      ],
+      "themeUpdatedNotificationShown": "true",
+      "extensionsAssistant/deprecated": [
+        "2gua.rainbow-brackets",
+        "olback.es6-css-minify",
+        "shan.code-settings-sync"
+      ],
+      "github-leonardobazico": [
+        {
+          "id": "ms-vsliveshare.vsliveshare",
+          "name": "Live Share",
+          "allowed": true
+        },
+        {
+          "id": "vscode.configuration-editing",
+          "name": "Configuration Editing",
+          "allowed": true
+        },
+        {
+          "id": "github.copilot-labs",
+          "name": "GitHub Copilot Labs",
+          "allowed": true
+        },
+        {
+          "id": "github.vscode-github-actions",
+          "name": "GitHub Actions",
+          "allowed": true
+        }
+      ],
+      "Comments.hidden": [
+        {
+          "id": "workbench.panel.comments",
+          "isHidden": false
+        }
+      ],
+      "workbench.view.extension.gradleContainerView.state.hidden": [
+        {
+          "id": "gradleTasksView",
+          "isHidden": false
+        },
+        {
+          "id": "gradleDefaultProjectsView",
+          "isHidden": false
+        },
+        {
+          "id": "recentTasksView",
+          "isHidden": false
+        },
+        {
+          "id": "gradleDaemonsView",
+          "isHidden": false
+        }
+      ],
+      "workbench.panel.testResults.state.hidden": [
+        {
+          "id": "workbench.panel.testResults.view",
+          "isHidden": false
+        },
+        {
+          "id": "workbench.panel.chat.view.copilot",
+          "isHidden": false
+        }
+      ],
+      "workbench.view.extension.spring.state.hidden": [
+        {
+          "id": "spring.apps",
+          "isHidden": false
+        },
+        {
+          "id": "spring.beans",
+          "isHidden": false
+        },
+        {
+          "id": "spring.mappings",
+          "isHidden": false
+        },
+        {
+          "id": "spring.properties",
+          "isHidden": false
+        },
+        {
+          "id": "spring.memoryView",
+          "isHidden": false
+        }
+      ],
+      "userDataProfiles.state.hidden": [
+        {
+          "id": "workbench.views.profiles.export.preview",
+          "isHidden": false
+        }
+      ],
+      "~remote.forwardedPortsContainer.hidden": [
+        {
+          "id": "~remote.forwardedPorts",
+          "isHidden": false
+        }
+      ],
+      "workbench.view.extension.copilot-labs.state.hidden": [
+        {
+          "id": "copilotSidebar.explain",
+          "isHidden": false
+        },
+        {
+          "id": "copilotSidebar.translate",
+          "isHidden": false
+        },
+        {
+          "id": "copilotSidebar.toolbox",
+          "isHidden": false
+        },
+        {
+          "id": "copilotSidebar.generateTests",
+          "isHidden": false
+        }
+      ],
+      "workbench.panel.chatSidebar.hidden": [
+        {
+          "id": "workbench.panel.chat.view.copilot",
+          "isHidden": false
+        }
+      ],
+      "workbench.view.extension.codeium.state.hidden": [
+        {
+          "id": "codeium.chatPanelView",
+          "isHidden": false
+        },
+        {
+          "id": "codeium.searchPanelView",
+          "isHidden": false
+        }
+      ],
+      "testHistoryVisibleInPeek": "false",
+      "workbench.view.extension.github-actions.state.hidden": [
+        {
+          "id": "github-actions.current-branch",
+          "isHidden": false
+        },
+        {
+          "id": "github-actions.workflows",
+          "isHidden": false
+        },
+        {
+          "id": "github-actions.settings",
+          "isHidden": false
+        },
+        {
+          "id": "github-actions.empty-view",
+          "isHidden": false
+        }
+      ],
+      "workbench.auxiliarybar.pinnedPanels": [],
+      "workbench.views.service.sidebar.e02bef86-4c29-4005-ab7c-c82c3d594a1c.state.hidden": [
+        {
+          "id": "workbench.panel.chat.view.copilot",
+          "isHidden": false
+        }
+      ],
+      "java.2.isCandidate": "false",
+      "java.2.skipVersion": "1.84.0",
+      "workbench.view.extension.relationalai.state.hidden": [
+        {
+          "id": "relationalai-admin",
+          "isHidden": false
+        },
+        {
+          "id": "relationalai-databases",
+          "isHidden": false
+        },
+        {
+          "id": "relationalai-engines",
+          "isHidden": false
+        },
+        {
+          "id": "relationalai-transactions",
+          "isHidden": false
+        }
+      ],
+      "settingsEditor2.splitViewWidth": "200",
+      "workbench.activityBar.location": "side"
+    }
+  }
+}

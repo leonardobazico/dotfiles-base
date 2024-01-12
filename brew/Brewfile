@@ -1,0 +1,148 @@
+tap "homebrew/autoupdate"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "remotemobprogramming/brew"
+tap "spectralkh/tap"
+# Run your GitHub Actions locally
+brew "act"
+# New file format for still image compression
+brew "jpeg-xl"
+# Codec library for encoding and decoding AV1 video streams
+brew "aom"
+# Tool for generating GNU Standards-compliant Makefiles
+brew "automake"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
+# Extendable version manager with support for Ruby, Node.js, Erlang & more
+brew "asdf"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
+# Shell extension to jump to frequently used directories
+brew "autojump"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Microsoft Azure CLI 2.0
+brew "azure-cli"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
+# Collection of portable C++ source libraries
+brew "boost"
+# Powerful, clean, object-oriented scripting language
+brew "ruby"
+# Dependency manager for Cocoa projects
+brew "cocoapods"
+# Container runtimes on MacOS (and Linux) with minimal setup
+brew "colima"
+# Top-like interface for container metrics
+brew "ctop"
+# Load/unload environment variables based on $PWD
+brew "direnv"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
+# Docker CLI plugin for extended build capabilities with BuildKit
+brew "docker-buildx"
+# Isolated development environments using Docker
+brew "docker-compose"
+# Convert text between DOS, UNIX, and Mac formats
+brew "dos2unix"
+# Collection of reusable C++ library artifacts developed at Facebook
+brew "folly"
+# Shared library for Watchman and Eden projects
+brew "edencommon"
+# Key value store for shared configuration and service discovery
+brew "etcd", restart_service: true
+# Command-line tool to interact with exercism.io
+brew "exercism"
+# C++14 implementation of the TLS-1.3 standard
+brew "fizz"
+# Modular, composable client/server abstractions framework
+brew "wangle"
+# Thrift functions for querying information from a service
+brew "fb303"
+# Facebook's branch of Apache Thrift, including a new C++ server
+brew "fbthrift"
+# GNU awk utility
+brew "gawk"
+# GitHub command-line tool
+brew "gh"
+# Distributed revision control system
+brew "git"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
+# Library for loading images as SDL surfaces and textures
+brew "sdl2_image"
+# Version Control Visualization Tool
+brew "gource"
+# Like cURL, but for gRPC
+brew "grpcurl"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Tool for managing apps on iOS devices
+brew "ideviceinstaller"
+# Install and debug iPhone apps from the command-line
+brew "ios-deploy"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Modern load testing tool, using Go and JavaScript
+brew "k6"
+# Lazier way to manage everything docker
+brew "lazydocker"
+# Multi-format archive and compression library
+brew "libarchive"
+# GNOME XML library
+brew "libxml2"
+# Curses-based tool for viewing and analyzing log files
+brew "lnav"
+# Keep your Mac's application settings in sync
+brew "mackup"
+# Development kit for the Java programming language
+brew "openjdk"
+# Java-based project management
+brew "maven"
+# Tools to facilitate the use of Microsoft Access databases
+brew "mdbtools"
+# HTTP/2 C Library
+brew "nghttp2"
+# Open client for Cisco AnyConnect VPN
+brew "openconnect"
+# Object-relational database system
+brew "postgresql@14"
+# Framework for managing multi-language pre-commit hooks
+brew "pre-commit"
+# Protocol buffers (Google's data interchange format)
+brew "protobuf"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.8"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
+# JVM-based programming language
+brew "scala"
+# HTTP regression testing and benchmarking utility
+brew "siege"
+# Organize software neatly under a single directory tree (e.g. /usr/local)
+brew "stow"
+# User interface to the TELNET protocol
+brew "telnet"
+# Watch files and take action when they change
+brew "watchman"
+# Internet file retriever
+brew "wget"
+# Linter for YAML files
+brew "yamllint"
+# JavaScript package manager
+brew "yarn"
+# Next-generation plugin manager for zsh
+brew "zplug"
+# UNIX shell (command interpreter)
+brew "zsh"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
+# Swift handover for remote mobs using git. mob is a CLI tool written in GO. It keeps your master branch clean and creates WIP commits on mob-session branch.
+brew "remotemobprogramming/brew/mob"
